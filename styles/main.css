@@ -1,0 +1,28 @@
+.main-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav li {
+	display: inline;
+}
+
+.main-nav li a {
+	padding: 50px;
+	text-decoration: none;
+}
+
+.main-nav li a:hover {
+	color: lime;
+}
+
+.research-module {
+	width: 40%;
+	height: 60%;
+	margin: 5px;
+	padding: 10px;
+	float: left;
+	border: 1px solid grey;
+	text-align: center;
+}
