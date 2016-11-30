@@ -1,5 +1,5 @@
-$(function () {
-    $(document).ready(function () {
+$(function() {
+    $(document).ready(function() {
         // Build the first chart
         Highcharts.chart('tactic-container', {
             chart: {
