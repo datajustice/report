@@ -1,0 +1,32 @@
+/** Style accordion area */
+article.accordion {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	padding: 1em;
+	background-color: #e8e8e8;
+	border-radius: 5px;
+	line-height: 1em;
+}
+/** Style the scenario headers */
+article.accordion .scenario {
+	display: block;
+	width: 90%;
+	height: 3em;
+	padding: 0 1em;
+	margin: 0.5em auto;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 3px;
+}
+/** Expand datasets on click, height responds to length of text */
+article.accordion .scenario:target {
+	background-color: #fff;
+	height: 100%;
+	padding-bottom: 1em;
+}
+
+h4 {
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
