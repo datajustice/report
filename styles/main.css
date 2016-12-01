@@ -21,15 +21,6 @@ body {
   font-family: "AsapRegular",Fallback,sans-serif;
 }
 
-.outer {
-  width: 100%;
-}
-
-.inner {
-  position: center;
-  padding: 20px 10px;
-  margin: 0 auto;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -41,11 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 34px;
   font-weight: 700;
-}
-
-h2 {
-  padding-bottom: 10px;
-  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -97,8 +84,9 @@ p img {
 
 
 #header {
- background-color: #c1c1c1;
- border-bottom: 10px solid #c1c1c1;
+background-color: #fff;
+  background-image: url(../images/headerbg.png);
+  background-repeat: horizontal;
 }
 
 #header_wrap .inner, #header_wrap .inner-guide {
@@ -116,7 +104,7 @@ p img {
     height: 0; 
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;	    
-    border-top: 40px solid #c1c1c1;
+    border-top: 40px solid #6AC28E;
     margin: 0 auto;
 }
 
@@ -125,7 +113,7 @@ p img {
     height: 0; 
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;	    
-    border-top: 40px solid #f2f2f2;
+    border-top: 40px solid #fff;
     margin: 0 auto;
 }
 
@@ -150,18 +138,25 @@ p img {
 
 #maintitle {
   float: left;
-  margin-left: 0px;
+  margin-left: 30px;
   text-align:left;
   vertical-align: middle;
-  padding: 10px 0px;
+  padding: 13px 0px;
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #fff;
 }
 
 #footer_wrap {
   color: white;
+}
+
+div#headertext {
+  background-image: url(../images/headertextbg.png);
+  background-repeat: none;
+  height: 100px;
+  max-width: 525px;
 }
 
 /*******************************************************************************
@@ -179,8 +174,7 @@ Small Device Styles
   }
 
   #project_title {
-     font-size: 20px;
-  }
+     font-size: 20px;  }
 
   #project_tagline {
      font-size: 14px;
@@ -196,6 +190,7 @@ Small Device Styles
 
   h2 {
     font-size: 24px;
+    padding-bottom: 0px;
   }
 
   h3 {
@@ -266,7 +261,7 @@ Small Device Styles
 
 img.grid-icon { 
   background-color: inherit !important; 
-  max-height:100px;
+  max-height:150px;
   vertical-align: middle;
 }
 
@@ -331,24 +326,23 @@ nav ul {
 
 nav ul li {
   display:inline-block;
-  padding: 10px 15px; 
+  padding: 12px 15px; 
   *display:inline;
   /* zoom:1; */
   min-width:80px;
-  max-width:150px;
+  max-width:250px;
   margin:0;
 }
 
 nav a, nav a:link, nav a:visited {
   color: inherit;
-  opacity:.75;
   text-decoration:none;
   border-bottom: none;
   font-weight: normal;
 }
 
 nav a:hover {
-  opacity:1
+  color: #d33a95;
 }
 
 /* COLOR BAR */
@@ -362,34 +356,22 @@ nav a:hover {
   float: left;
 }
 
-.color0 {
-    background-color: green;
-    float: left;
-    width: 5%;
-}
-
 .color1 {
-  background-color: purple;
+  background-color: #6AC28E;
   float: left;
-  width: 33.5%;
+  width: 20%;
 }
 
 .color2 {
-  background-color: darkgrey;
+  background-color: #086bb5;
   float: left;
-  width: 13%;
+  width: 36%;
 }
 
 .color3 {
-    background-color: lightgrey;
+  background-color: #d33a95;
   float: left;
-  width: 43.5%;
-}
-
-.color4{
-    background-color: lightgrey;
-  float: left;
-  width: 5%;
+  width: 44%;
 }
 
 
@@ -404,10 +386,6 @@ nav a:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-/* used to define the width of the header and body */
-.default-width { max-width: 640px; }
-.home-width { max-width: 1200px; }
 
 .small-caps {
  font-variant: small-caps;
@@ -525,4 +503,16 @@ Small Device Styles
   float: left;
   border: 1px solid grey;
   text-align: center;
+}
+
+.textblocks li {
+  margin-bottom: 30px;
+}
+
+.textblocks p {
+  margin-top: 10px;
+}
+
+.bottom {
+  padding-bottom: 40px;
 }

@@ -45,5 +45,9 @@ $(function() {
                 }]
             }]
         });
+        // Build the second chart
+        // Highcharts.chart('', {
+
+        // });
     });
 });
