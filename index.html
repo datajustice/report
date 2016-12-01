@@ -1,126 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <title>Data Justice</title>
-    <!-- add Bootstrap and stylesheets -->
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Data Justice Research: Report and Recommendations">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
+    <title>Data Justice</title>
     <link href="styles/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <!-- add jQuery, necessary for Bootstrap js plugins -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
-<!-- start top navigation -->
-<div id="header">
+    <div id="header">
+    <!-- NAV TITLE BAR -->
   <nav> 
-    <div class="color-bar">
-    	<div class="color1">&nbsp;</div>
-    	<div class="color2">&nbsp;</div>
-    	<div class="color3">&nbsp;</div>
-    </div>
-   <div id="maintitle" class="main-nav"><a href="index.html">Data Justice</a></div>
-	  <ul>
-	  	<li class=""><a href="content/recommendations.html">Recommendations</a></li>
-	  	<li class=""><a href="content/research.html">Research</a></li>
-	  	<li class=""><a href="content/resources.html">Resources</a></li>
-	  </ul>
+  <div class="color-bar">
+    <div class="color1">&nbsp;</div>
+    <div class="color2">&nbsp;</div>
+    <div class="color3">&nbsp;</div>
+  </div>
+  
+  <div id="maintitle" class="main-nav"><a href="/">Guide to Data Jusice</a></div>
+    <ul>
+      <li class=""><a href="./recommendations.html">Recommendations</a></li>
+      <li class=""><a href="./research.html">Research</a></li>
+      <li class=""><a href="./resources.html">Resources</a></li>
+    </ul>
+
+    
   </nav>
-  <!-- start title block on front page -->
-  <div id="header_wrap" class="container-fluid">
-    <div class="row inner home-width align-center;">
-      <div class="col-sm-offset-1 col-sm-10">   
-        <img src="/files/website/girl-mechanic.png" style="max-width: 240px; float: left; display: block; margin-right: 20px;"/>
-        <div id="headertext" style="margin-top: 50px;">
-          <div id="project_title" style="padding-top: 18px; padding-left: 20px;">Data Justice</div>
-          <div id="project_tagline" style="padding-left: 20px">Exploring how open data effects our communities</div>
-        </div>
-        <br style="clear:both;" />
+    <!-- end nav -->
+    <!-- Start title block on front page -->
+
+    <div id="header_wrap" class="container-fluid">
+      <div class="row inner home-width align-center;">
+      <div class="col-sm-10">   
+        <img src="/files/website/girl-mechanic.png" style="max-width:240px;float:left;display:block;margin-right:20px;"/>
+  <div id="headertext" style="margin-top:50px;">
+    <div id="project_title" style="padding-top: 18px;"><h1>Data Justice Research</h1></div>
+    <div id="project_tagline">Learning how data effects our communities.</div>
+  </div>
+  <br style="clear:both;" />
       </div>
     </div>
-  </div>
-</div>
-<!-- end nav -->
+    </div>
+    
+  </div>  
+<!-- end header, begin main content -->
 
-<!-- start main content -->
 <div class="container-fluid" id="main_content_wrap">
-  <div class="row">
-    <div class="col-sm-offset-2 col-sm-8">
-	    <div class="center-arrow-down" align="center"></div>
-      <section id="main_content">
-        <div class="content">
-        <h2>Our work</h2>
-        <p>Since the City of Detroit launched the Open Data Portal and GO DATA policy initiative in 2015, the Detroit Digital Justice Coalition (DDJC) and Detroit Community Technology Project (DCTP) have been exploring ideas and practices that promote data justice. By data justice, we mean understanding the ways in which open data can be both beneficial and harmful to residents, especially to communities that have been historically criminalized.</p>
-        <p>This report - Recommendations for Data Justice - is the product of our organizing efforts, participatory research projects and community education initiatives around open data. We present these recommendations to advocate for the adoption and implementation of community-generated policy provisions and to outline strategies for open data stewardship that focus on access, engagement and accountability. Alongside our recommendations, we also share key takeaways from our research and resources for adapting our strategies.</p>
-        <h2>Recommendations for Data Justice</h2>
-        <!-- start 3 x 2 grid blocks    -->
-        <div class="grid home-width">
-          <div class="grid-row"> <!-- first row-->
-		        <div class="grid-cell">
-      			  <a href="content/recommendations.html#engage" class="simple"><img src="images/rec1.png" class="grid-icon" /></a>
-      			  <h4><a href="content/recommendations.html#engage" class="simple">Engage residents offline</a></h4>
-    			    <h5>Raise awareness of open data in person through community events and training workshops.</h5>
-    		    </div>
-		        <div class="grid-cell">
-      			  <a href="content/recommendations.html#prioritize" class="simple"><img src="images/rec2.png" class="grid-icon" /></a>
-      			  <h4><a href="content/recommendations.html#prioritize" class="simple">Listen and respond to users</a></h4>
-      			  <h5>Prioritize the release of new datasets based on community interest and need.</h5>
-    		    </div>
-		        <div class="grid-cell">
-      			  <a href="content/recommendations.html#define" class="simple"><img src="images/rec3.png" class="grid-icon" /></a>
-      			  <h4><a href="content/recommendations.html#define" class="simple">Define technical terms</a></h4>
-			        <h5>Explain field definitions, abbreviations and technical or political lingo used to code data.</h5>
-		        </div>
-		      </div>  <!-- end first row-->
-          <div class="grid-row"> <!-- second row-->
-            <div class="grid-cell">
-              <a href="content/recommendations.html#services" class="simple"><img src="images/rec4.png" class="grid-icon" /></a>
-              <h4><a href="content/recommendations.html#services" class="simple">Publish data about all City services</a></h4>
-              <h5>Make information about all City operations transparent, even for public services that are now privatized.</h5> 
-            </div>
-            <div class="grid-cell">
-              <a href="content/recommendations.html#protect" class="simple"><img src="images/rec5.png" class="grid-icon" /></a>
-              <h4><a href="content/recommendations.html#protect" class="simple">Protect the people behind the numbers</a></h4>
-              <h5>Share methods for how and why certain open data are anonymized and others are not.</h5>
-            </div>
-            <div class="grid-cell">
-              <a href="content/recommendations.html#future" class="simple"><img src="images/rec6.png" class="grid-icon" /></a>
-              <h4><a href="content/recommendations.html#future" class="simple">Share intentions</a></h4>
-              <h5>Publicize upcoming data releases, civic app launch dates or community events.</h5>
-            </div>
-          </div> <!-- end second row -->
-        </div>	<!-- end grid -->
-        <h2>Connect with us</h2>
-        <p>We expect that our recommendations, and the research that has shaped them, will continue to grow and evolve as we move forward with our data justice work. We welcome feedback and your ideas at communitytechnology@alliedmedia.org.</p>
-        <p class="bottom">We also welcome contributions, especially to our Resources page. Share links to projects, popular education tools and curriculum for learning about open data, and more by submitting an issue or pull request to our Github repository (requires a Github account) or by email.</p>
-       </div>	
-      </section>
-    </div>
-  </div>
-</div>
-<!-- end main content -->
+<div class="row">
+<div class="col-md-offset-2 col-md-8">
+  
+  <div class="center-arrow-down" align="center"></div>
 
-<!-- start footer -->
-<div id="footer_wrap" class="container-fluid outer">
-  <div class="center-arrow-down-ft" align="center"></div>
+<section id="main_content">
+
+<div class="content">
+<h5 id="a-collective-resource-for-span-classsmall-caps-digital-stewardshipspan-span-classsmall-capsdigital-justicespan-and-span-classsmall-capscommunity-infrastructurespan">A collective resource for <span class="small-caps"> digital stewardship</span>, <span class="small-caps">digital justice</span> and <span class="small-caps">community infrastructure</span>.</h5>
+
+<p>(Homepage in progress. Introduce report, research and resources available on this site and how to contribute. Other key info to include here?)</p>
+<h2>Our work</h2>
+<p>Since the City of Detroit launched the Open Data Portal and GO DATA policy initiative in 2015, the Detroit Digital Justice Coalition (DDJC) and Detroit Community Technology Project (DCTP) have been exploring ideas and practices that promote data justice. By data justice, we mean understanding the ways in which open data can be both beneficial and harmful to residents, especially to communities that have been historically criminalized.</p>
+<p>This report - Recommendations for Data Justice - is the product of our organizing efforts, participatory research projects and community education initiatives around open data. We present these recommendations to advocate for the adoption and implementation of community-generated policy provisions and to outline strategies for open data stewardship that focus on access, engagement and accountability. Alongside our recommendations, we also share key takeaways from our research and resources for adapting our strategies.</p>
+<h2>Our Recommendations</h2>
+</div> <!-- end content class div -->
+</div> <!-- end column div -->
+</div> <!-- end row div -->
+
+
+
+  <!--    GRID BLOCKS    -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-offset-2 col-sm-8 bottom">
-        <p><strong>Collaborative project between:</strong></p>
-        <p>
-          <a href="http://detroitdjc.org/">Detroit Digital Justice Coalition</a><br />
-          <a href="http://www.detroitcommunitytech.org">Detroit Community Technology Project</a>
-        </p>
-        <div style="margin-top: 30px; padding-top: 30px; border-top:thin solid gray">
-          <p>Documentation is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
-          <p>Please share any derivative works.</p>
+  <div class="row cards">
+    
+    <div class="col-lg-offset-2 col-lg-3 col-md-offset-1 col-md-5">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover);">
+      <div class="flipper">
+        <div class="front">
+            <a href="/docs/cck/index.html" class="simple"><img src="images/rec1.png" class="grid-icon" /></a>
+            <h4><a href="/docs/cck/index.html" class="simple">Engage Residents Offline</a></h4>
+          <h5>Raise awareness of open data in person through community events and training workshops.</h5>
         </div>
-      </div>
+        <div class="back">
+          <p>In order to build awareness and open data literacy in Detroit, it is important to consider digital inequality and limited access to broadband internet. Through our data justice surveys, we found that most residents first learn about open data and the portal at events or workshops, but these can be infrequent and hard to access. In addition to the online tutorials DoIT currently offers for learning about the portal, we need an engagement plan that emphasizes community dialogue and in-person training sessions. We are sharing strategies we have found successful through organizing Data DiscoTechs, like partnering with local recreation centers and developing popular education methods to interactively learn about open data, as a starting point.</p>
+        </div>
+      </div> <!-- end flipper -->
+    </div> <!-- end flip container -->
+    </div>  <!-- end column -->
+    
+    <div class="col-lg-3 col-md-5">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover);">
+      <div class="flipper">
+        <div class="front">
+            <a href="/docs/intro-ct/index.html" class="simple"><img src="images/rec2.png" class="grid-icon" /></a>
+            <h4><a href="/docs/intro-ct/index.html" class="simple">Listen &amp; Respond to Users</a></h4>
+            <h5>Prioritize the release of new datasets based on community interest and need.</h5>
+        </div> <!-- end front -->
+        <div class="back">
+          <p>Currently, two key ways exist for residents to request public records not yet published to the portal: through the data portal’s nomination form and through Freedom of Information Act (FoIA) requests. The first option requires internet access and appears to be a slow process, as only a single nomination from over 30 suggestions has been approved since launching. The second option, FoIAs, are also notoriously cumbersome and can be costly. Yet, these two mediums remain crucial ways for the City to gauge community interest and data needs. FoIA requests and their responses, as well as approved nominated datasets, should be posted to the portal, to both boost relevant datasets for users and save internal resources in answering duplicate requests. We outlined our favorite ways that other cities are accomplishing this in our policy research.</p>
+        </div>
+      </div> <!-- end flipper-->
+    </div> <!-- end flip container -->
+    </div> <!-- end column -->
+    
+    <div class="col-lg-3 col-md-offset-1 col-lg-offset-0 col-md-5">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover);">
+      <div class="flipper">
+        <div class="front">
+          <a href="/docs/hacks/index.html" class="simple"><img src="images/rec3.png" class="grid-icon" /></a>
+          <h4><a href="/docs/hacks/index.html" class="simple">Define Technical Terms</a></h4>
+          <h5>Explain field definitions, abbreviations and technical or political lingo used to code data.</h5> 
+        </div>
+        <div class="back">
+          <p>While we appreciate all open data, many datasets are not so easy to decipher. Participants in our data justice focus group often pointed to an example of confusing language in the Blight Violations dataset. How can we begin to use or analyze this dataset if we do not know how the City defines “blight”? Why is the definition not included with the description of the dataset? All datasets published to the Portal should include field definitions, data collection methods and basic definitions of policy-specific or technical language. The DPD: Citizen Complaints dataset exemplifies useful, thorough documentation and includes a description, contact information and field definitions, yet we have found many other datasets in Detroit’s portal to be lacking these metadata.</p>
+        </div>
+      </div> <!-- end flipper -->
+    </div> <!-- end flip-container -->
+    </div> <!-- end column -->
+    
+    
+  <!-- start second card row-->
+
+    <div class="clearfix visible-lg-block"></div>
+    <div class="col-lg-offset-2 col-lg-3 col-md-offset-0 col-md-5">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover);">
+      <div class="flipper">
+        <div class="front">
+        <a href="/docs/hacks/index.html" class="simple"><img src="images/rec4.png" class="grid-icon" /></a>
+        <h4><a href="/docs/hacks/index.html" class="simple">Publish Data on All City Services</a></h4>
+        <h5>Make information about all City operations transparent, even for public services that are now privatized.</h5> 
+        </div>
+        <div class="back">
+          <p>The stated mission of the portal is, “to increase public access to valuable data and information concerning City government operations and service delivery.” But, what about crucial City operations and services that are now administered by government contractors, private corporations and quasi-public entities, like the Public Lighting Authority, Great Lakes Water Authority or Detroit Economic Growth Corporation? These entities are responsible for datasets that we found community organizers often cite as most important to have access to, such as utility shut-offs and development projects, yet are not subject to FoIA laws. The portal should include basic contract information about all service providers at minimum, and ideally additional data about their specific operating activities. For example, what vendor(s) does the City contract to remove garbage? Where is that vendor located, what is the timeline and total amount of their contract? The Sunlight Foundation offers legal language for a provision like this to ensure “government decisions to employ outside contractors do not result in the public losing access to its own information.”</p>
+        </div>
+      </div> <!-- end flipper -->
+    </div> <!-- end flip-container -->
+    </div> <!-- end column -->
+
+    <div class="col-lg-3 col-md-offset-1 col-lg-offset-0 col-md-5">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover);">
+      <div class="flipper">
+        <div class="front">
+        <a href="/docs/hacks/index.html" class="simple"><img src="images/rec5.png" class="grid-icon" /></a>
+        <h4><a href="/docs/hacks/index.html" class="simple">Protect the People Behind the Numbers</a></h4>
+        <h5>Share methods for how and why certain open data are anonymized and others are not.</h5> 
+        </div>
+        <div class="back">
+          <p>While open data positively boosts government transparency, it can also be a source of fear, paranoia and harm to residents. While facilitating data justice scenarios, we heard deep-rooted concerns about how crime data can re-victimize survivors of assault, how the Improve Detroit Open Issues queue can incite property swindles (like a metal scrapper pinpointing an abandoned vehicle), how Blight Tickets can reinforce “bad” and “undesirable” neighborhood reputations and influence property values or red-lining practices, or how a randomized block-level location of a Crime Incident is not random enough in Detroit’s most desolate areas to truly protect victims from stigmatization or further harassment. As the City continues to publish data, it is crucial to both offer clear documentation for data processing methods as they relate to information privacy and establish a process for residents to ask questions, voice concerns and file disputes.</p>
+        </div>
+      </div> <!-- end flipper -->
+    </div> <!-- end flip-container -->
+    </div> <!-- end column -->
+
+    <div class="col-lg-3 col-md-5">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover);">
+      <div class="flipper">
+        <div class="front">
+          <a href="/docs/hacks/index.html" class="simple"><img src="images/rec6.png" class="grid-icon" /></a>
+          <h4><a href="/docs/hacks/index.html" class="simple">Share What's Next</a></h4>
+          <h5>Publicize upcoming data releases, civic app launch dates or community events.</h5> 
+        </div>
+        <div class="back">
+          <p>While it is simple to see how the Portal has grown since its launch through the Public Dataset Inventory, we also want to know what is coming next so that we can plan community research and organizing initiatives. Once or twice a year, DoIT should publish their key goals and activities, sharing with the public which dataset releases, portal feature improvements and public events to anticipate. Similar to the NYC Open Data Portal, the front page of Detroit’s portal should highlight available features, identify the purpose, advertise new releases and offer quick links to things that matter most to Detroiters.</p>
+        </div>
+    </div> <!-- end flipper -->
+    </div> <!-- end flip-container -->
+    </div> <!-- end column -->
+
+    </div> <!-- end row 2 -->
+    </div> <!-- end card container -->
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-offset-2 col-md-8">
+<h2>Connect with us</h2>
+<p>We expect that our recommendations, and the research that has shaped them, will continue to grow and evolve as we move forward with our data justice work. We welcome feedback and your ideas at communitytechnology@alliedmedia.org.</p>
+<p class="bottom">We also welcome contributions, especially to our Resources page. Share links to projects, popular education tools and curriculum for learning about open data, and more by submitting an issue or pull request to our Github repository (requires a Github account) or by email.</p>
+</div> <!-- end column -->
+</div> <!-- end row -->
+
+</div>  <!-- end container -->
+
+</section>
+</div>
+</div>
+</div>
+<!-- end main content div -->
+
+<div id="footer_wrap" class="container-fluid outer">
+<div class="center-arrow-down-ft" align="center"></div>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-offset-2 col-md-8 bottom">
+    
+    <p><strong>Collaborative project between:</strong></p>
+    <p>
+      <a href="http://detroitdjc.org/">Detroit Digital Justice Coalition</a><br />
+      <a href="http://www.detroitcommunitytech.org">Detroit Community Technology Project</a>
+    </p>
+    <div style="margin-top: 30px; padding-top: 30px; border-top:thin solid gray">
+      <p><a href="http://creativecommons.org/licenses/by-sa/4.0/"></a>
+  <!--<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>-->
+      <p>Documentation is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p><p>Please share any derivative works.</p>
     </div>
   </div>
-</div>
-<!-- end footer -->
+
+  </div>
+  
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  
 </body>
 </html>
