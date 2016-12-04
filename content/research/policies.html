@@ -1,54 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <title>Data Justice</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.css">
+    <!-- add jQuery, necessary for Bootstrap js plugins -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-<nav class="research-nav">
-	<ul>
-		<li><a href="../research.html">Back to Research</a></li>
-	</ul>
-</nav>
-<h1>Research: Data Policies</h1>
-<h2>Open Data in Detroit</h2>
-<p>In February 2015, Mayor Duggan and the City of Detroit “took a major step toward becoming a more transparent government by launching the first phase of its new Initiative, which will make volumes of information more easily accessible to the public at no cost,” according to the City’s official press release. Further, we learned that:</p>
-<p class="block-quote">"The purpose of the GO DATA (Government Open Data Access To All) initiative – established by Executive Order 2015-02 – is to increase the accessibility and the availability of certain data collected or maintained by the City. The goal, according to Mayor Mike Duggan, is to create a more open, collaborative and accountable relationship between the City government and the people it serves.</p>
-<p class="block-quote">Open data – a process of making non-personal, public information broadly accessible and usable by people and computers, free of any constraints - is a fast-growing movement within government.  The cornerstone of this major shift in City policy will be that data and information, unless exempt from disclosure under State or federal law, will be available to the public, starting with an open data portal accessible at data.detroitmi.gov."</p>
-<p>At the time of its launch, Detroit’s new data portal, generously donated by the Socrata Foundation, touted 75 individual datasets from nine participating departments and agencies, including: Detroit Police, Buildings, Safety, Engineering and Environmental Department, Detroit Land Bank Authority, Planning and Development, Recreation, Public Works, Assessor, DDOT, and the City Clerk/Elections.</p>
-<p>Since then, we’ve seen the portal grow in measurable ways. For example, it’s now home to nearly 140 individual datasets and at least six additional departments and agencies are publishing their data, like Detroit Building Authority, Department of Neighborhoods, Detroit Fire Department, Detroit Public Schools, SMART transit and SeeClickFix/Improve Detroit App. These gains can be referenced in detail through the helpful Public Dataset Inventory, which describes all datasets included in the portal to date.</p>
-<p>Despite these important gains, the portal still leaves us wishing for more. Through engagement and research, members of the DDJC and DCTP outline the following gaps, issues and questions to inform future data releases and initiatives:
-<ul>
-	<li>Financial datasets about City contracts and grants have yet to be released, despite initial announcements for its forthcoming release in summer 2015, and an updated publishing timeline remains unknown.</li>
-	<li>The first open data Advisory Committee has only been recently convened, even though the nomination process began at the portal’s launch. Will objectives and notes from this working group of residents be shared through the portal or elsewhere?</li>
-	<li>Many datasets on the portal still lack well-documented metadata, like field definitions or a data dictionary that describes that dataset. We think that DPD’s Citizen Complaints dataset is an effective example of useful documentation as it includes a description, field definitions and contact information for learning more about the data, but unfortunately datasets documented as thoroughly as that one seem to be the minority of those available through the portal.</li>
-</ul></p>
-<p>Releasing data through the City’s data portal is only considered a first step of the GO DATA Initiative, and we see our data justice recommendations as meaningful strategies for continuing to implement open data in Detroit in ways that focus on greater access and accountability, and engage a more diverse community of users to generate policy provisions for greater government transparency.</p>
-<h2>Open Data in Other Cities</h2>
-<p>To vision our dream open data ecosystem in Detroit, we’ve looked to the transparency policies, data portals and open data practices and tools in place in other cities around the U.S. for inspiration.</p>
-<p>The Sunlight Foundation’s Open Data Policy Map has been a key resource for comparing and contrasting policy language and initiatives across cities. Using this, we learned that many other cities first launch their open data portals through Executive Orders, City Council Resolutions or Mayoral Directives like Detroit, but that City’s who have adopted full open data legislation often adhere better to Sunlight’s Best Practices for open data policy. This isn’t necessarily surprising since legislation often allows for more thoroughness than the simpler legalese of an Executive Order, which supports the case for much needed policy provisions to ensure the most just implementation of open data. Seattle, San Jose CA, Waco TX, Las Vegas, Cambridge MA and Chicago are some notable municipalities that are successfully putting Sunlight’s guidelines for open data stewardship into practice, according to this research.</p>
-<p>Members of the DDJC and DCTP have also investigated other cities data portals and civic data-driven applications to find inspiration. Our favorite discoveries that could be meaningfully adapted to Detroit data are described below.</p>
-<p><b>Freeing Freedom of Information Act (FoIA) Requests</b>
-<ul>
-	<li>In Chicago, users can search FoIA Request Logs by city department.</li>
-	<li>Washington DC hosts a website where users can digitally submit a FoIA request or appeal, track its status, and search past responses and public records.</li>
-</ul></p>
-<p><b>Comprehensively defining “Public Safety” and looking beyond crime incidents</b>
-<ul>
-	<li>New York uses a broad, less crime-focused definition of “Public Safety”, including datasets about evacuation zones, lead-based paint dwellings, fire codes, citizen emergency response teams and warming centers.</li>
-	<li>SmartChicago’s Crime and Punishment app looks beyond the point of crime to trace data sources from commission all the way to prisons, and provides valuable documentation about criminal justice data accessibility throughout.</li>
-</ul></p>
-<p><b>Using open data to better communicate with our government</b>
-<ul>
-	<li>SimpliCity developed by the City of Ashville, NC prompts users to ask civic information-related questions, like “who owns this property” or “when is my recycling pick-up day”? This tool parses many types of City data into digestible, relevant answers to everyday questions.</li>
-	<li>Councilmatic is at work in Philly, New York and Chicago and lets users track the status of bills in City Council, contact their council representatives sponsoring the legislation, and share their opinions through comments.</li>
-</ul></p>
-<p><b>Open data for storytelling and investigative reporting</b>
-<ul>
-	<li>The Anti-Eviction Mapping project out of California’s Bay Area is an inspiring example of how to use housing and property data in combination with interviews and oral histories to preserve a sense of place.</li>
-	<li>An analysis of traffic tickets, specifically for bicyclists, in Tampa Bay exposed a data-driven case of racial biases and inequality in policing.</li>
-</ul></p>
-<p>These examples are only a sliver of the broad ecosystem of civic apps and data-driven narratives that can be crafted from open data. As more tools and use cases of open data like these are implemented in Detroit, we hope that the starting point is listening to residents and that the proposed technology prioritizes relevance, accessibility and accountability.</p>
+<!-- START HEADER-->
+<div id="header">
+  <nav> 
+    <div class="color-bar">
+      <div class="color1">&nbsp;</div>
+      <div class="color2">&nbsp;</div>
+      <div class="color3">&nbsp;</div>
+    </div>
+    <div id="maintitle" class="main-nav"><a href="../../index.html">Data Justice</a></div>
+    <ul>
+      <!-- <li class=""><a href="../recommendations.html">Recommendations</a></li> -->
+      <li class=""><a href="../research.html">Research</a></li>
+      <li class=""><a href="../resources.html">Resources</a></li>
+    </ul>
+  </nav>
+</div> <!-- END HEADER -->
+
+<!-- START MAIN CONTENT -->
+<div class="container-fluid" id="main_content_wrap">
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+      <section id="main_content">
+		<h1>Research: Data Policies</h1>
+		<h2>Open Data in Detroit</h2>
+		<p>In February 2015, Mayor Duggan and the City of Detroit “took a major step toward becoming a more transparent government 		by launching the first phase of its new Initiative, which will make volumes of information more easily accessible to the 		public at no cost,” according to the City’s official press release. Further, we learned that:</p>
+		<p class="block-quote">"The purpose of the GO DATA (Government Open Data Access To All) initiative – established by 		Executive Order 2015-02 – is to increase the accessibility and the availability of certain data collected or maintained by 		the City. The goal, according to Mayor Mike Duggan, is to create a more open, collaborative and accountable relationship 		between the City government and the people it serves.</p>
+		<p class="block-quote">Open data – a process of making non-personal, public information broadly accessible and usable by 		people and computers, free of any constraints - is a fast-growing movement within government.  The cornerstone of this 		major shift in City policy will be that data and information, unless exempt from disclosure under State or federal law, 		will be available to the public, starting with an open data portal accessible at data.detroitmi.gov."</p>
+		<p>At the time of its launch, Detroit’s new data portal, generously donated by the Socrata Foundation, touted 75 		individual datasets from nine participating departments and agencies, including: Detroit Police, Buildings, Safety, 		Engineering and Environmental Department, Detroit Land Bank Authority, Planning and Development, Recreation, Public Works, 		Assessor, DDOT, and the City Clerk/Elections.</p>
+		<p>Since then, we’ve seen the portal grow in measurable ways. For example, it’s now home to nearly 140 individual datasets 		and at least six additional departments and agencies are publishing their data, like Detroit Building Authority, 		Department of Neighborhoods, Detroit Fire Department, Detroit Public Schools, SMART transit and SeeClickFix/Improve 		Detroit App. These gains can be referenced in detail through the helpful Public Dataset Inventory, which describes all 		datasets included in the portal to date.</p>
+		<p>Despite these important gains, the portal still leaves us wishing for more. Through engagement and research, members of 		the DDJC and DCTP outline the following gaps, issues and questions to inform future data releases and initiatives:
+		<ul>
+			<li>Financial datasets about City contracts and grants have yet to be released, despite initial announcements for its 		forthcoming release in summer 2015, and an updated publishing timeline remains unknown.</li>
+			<li>The first open data Advisory Committee has only been recently convened, even though the nomination process began 		at the portal’s launch. Will objectives and notes from this working group of residents be shared through the portal or 		elsewhere?</li>
+			<li>Many datasets on the portal still lack well-documented metadata, like field definitions or a data dictionary that 		describes that dataset. We think that DPD’s Citizen Complaints dataset is an effective example of useful documentation 		as it includes a description, field definitions and contact information for learning more about the data, but 		unfortunately datasets documented as thoroughly as that one seem to be the minority of those available through the 		portal.</li>
+		</ul></p>
+		<p>Releasing data through the City’s data portal is only considered a first step of the GO DATA Initiative, and we see our 		data justice recommendations as meaningful strategies for continuing to implement open data in Detroit in ways that focus 		on greater access and accountability, and engage a more diverse community of users to generate policy provisions for 		greater government transparency.</p>
+		<h2>Open Data in Other Cities</h2>
+		<p>To vision our dream open data ecosystem in Detroit, we’ve looked to the transparency policies, data portals and open 		data practices and tools in place in other cities around the U.S. for inspiration.</p>
+		<p>The Sunlight Foundation’s Open Data Policy Map has been a key resource for comparing and contrasting policy language 		and initiatives across cities. Using this, we learned that many other cities first launch their open data portals through 		Executive Orders, City Council Resolutions or Mayoral Directives like Detroit, but that City’s who have adopted full open 		data legislation often adhere better to Sunlight’s Best Practices for open data policy. This isn’t necessarily surprising 		since legislation often allows for more thoroughness than the simpler legalese of an Executive Order, which supports the 		case for much needed policy provisions to ensure the most just implementation of open data. Seattle, San Jose CA, Waco TX, 		Las Vegas, Cambridge MA and Chicago are some notable municipalities that are successfully putting Sunlight’s guidelines 		for open data stewardship into practice, according to this research.</p>
+		<p>Members of the DDJC and DCTP have also investigated other cities data portals and civic data-driven applications to 		find inspiration. Our favorite discoveries that could be meaningfully adapted to Detroit data are described below.</p>
+		<p><b>Sharing Freedom of Information Act (FoIA) Requests</b>
+		<ul>
+			<li>In Chicago, users can search FoIA Request Logs by city department.</li>
+			<li>Washington DC hosts a website where users can digitally submit a FoIA request or appeal, track its status, and 		search past responses and public records.</li>
+		</ul></p>
+		<p><b>Comprehensively defining “Public Safety” and looking beyond crime incidents</b>
+		<ul>
+			<li>New York uses a broad, less crime-focused definition of “Public Safety”, including datasets about evacuation 		zones, lead-based paint dwellings, fire codes, citizen emergency response teams and warming centers.</li>
+			<li>SmartChicago’s Crime and Punishment app looks beyond the point of crime to trace data sources from commission all 		the way to prisons, and provides valuable documentation about criminal justice data accessibility throughout.</li>
+		</ul></p>
+		<p><b>Using open data to better communicate with our government</b>
+		<ul>
+			<li>SimpliCity developed by the City of Ashville, NC prompts users to ask civic information-related questions, like 		“who owns this property” or “when is my recycling pick-up day”? This tool parses many types of City data into 		digestible, relevant answers to everyday questions.</li>
+			<li>Councilmatic is at work in Philly, New York and Chicago and lets users track the status of bills in City Council, 		contact their council representatives sponsoring the legislation, and share their opinions through comments.</li>
+		</ul></p>
+		<p><b>Open data for storytelling and investigative reporting</b>
+		<ul>
+			<li>The Anti-Eviction Mapping project out of California’s Bay Area is an inspiring example of how to use housing and 		property data in combination with interviews and oral histories to preserve a sense of place.</li>
+			<li>An analysis of traffic tickets, specifically for bicyclists, in Tampa Bay exposed a data-driven case of racial 		biases and inequality in policing.</li>
+		</ul></p>
+		<p>These examples are only a sliver of the broad ecosystem of civic apps and data-driven narratives that can be crafted 		from open data. As more tools and use cases of open data like these are implemented in Detroit, we hope that the starting 		point is listening to residents and that the proposed technology prioritizes relevance, accessibility and accountability.</p>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- end main content div -->
+
+<!-- START FOOTER -->
+<div id="footer_wrap" class="container-fluid outer">
+  <!-- <div class="center-arrow-down-ft" align="center"></div> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 bottom">
+        <p>Collaborative project between:</p>
+        <p>
+          <a href="http://detroitdjc.org/">Detroit Digital Justice Coalition</a><br />
+          <a href="http://www.detroitcommunitytech.org">Detroit Community Technology Project</a>
+        </p>
+        <p>Inspired by the <a href="https://communitytechnology.github.io/">Community Technology Field Guide</a></p>
+        <div style="margin-top: 30px; padding-top: 30px; border-top:thin solid gray">
+          <p>Documentation is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative CommonAttribution-ShareAlike 4.0 International License</a>.</p><p>Please share any derivative works.</p>
+        </div>
+      </div> <!-- end col -->
+    </div> <!-- end row -->
+  </div> <!-- end container -->
+</div> <!-- END FOOTER -->
 </body>
 </html>

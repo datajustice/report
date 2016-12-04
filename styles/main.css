@@ -103,7 +103,7 @@ background-color: #fff;
     width: 0; 
     height: 0; 
     border-left: 40px solid transparent;
-    border-right: 40px solid transparent;	    
+    border-right: 40px solid transparent;     
     border-top: 40px solid #6AC28E;
     margin: 0 auto;
 }
@@ -112,19 +112,18 @@ background-color: #fff;
     width: 0; 
     height: 0; 
     border-left: 40px solid transparent;
-    border-right: 40px solid transparent;	    
+    border-right: 40px solid transparent;     
     border-top: 40px solid #fff;
     margin: 0 auto;
 }
 
-#project_title {
+#project_title h1 {
   margin: 0;
   color: #212121;
   font-size: 28px;
   letter-spacing: 2px;
   font-weight: 400;
-/*  text-shadow: 2px 2px 2px #000;*/
-  text-align: left;
+  text-align: center;
 }
 
 #project_tagline {
@@ -132,7 +131,7 @@ background-color: #fff;
   font-size: 18px;
   font-weight: 400;
 /*  text-shadow: 2px 2px 2px #000;*/
-  text-align: left;
+  text-align: center;
   letter-spacing: 2px;
 }
 
@@ -157,104 +156,66 @@ div#headertext {
   background-repeat: none;
   height: 100px;
   max-width: 525px;
-}
-
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
-  }
-
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
-  }
-
-  #project_title {
-     font-size: 20px;  }
-
-  #project_tagline {
-     font-size: 14px;
-  }
-
-  #maintitle {
-     font-size: 14px;
-  } 
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-    padding-bottom: 0px;
-  }
-
-  h3 {
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-  h6 {
-    font-size: 12px;
-  }
+  min-width: 200px;
+  margin: auto;
 }
 
 /**** GRID START ****/
 
-.grid {
-    display: table;
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
     width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    border: separate;
-    border-spacing: 1.5em;
+    max-width: 600px;
+    min-height: 20em;
 }
 
-.grid-row {
-    display: table-row;
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.element {
-   display: table-cell;
-   width: 30%;
-   float: left;
-   min-width:150px;
-   padding: 10px 20px;
-   overflow: hidden;
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: thin solid lightgrey;
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
 }
 
-.grid-cell {
-    display: table-cell;
-    min-width: 150px;
-    width: 31%;
-    border: thin solid lightgrey;
-    background-color: #eee;
-    text-align: center;
-    padding: 15px;
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
 }
 
-.grid-cell:hover {
-    background-color: white;
+.back {
+  transform: rotateY(180deg);
+  text-align: left;
 }
 
-.grid-cell h4 {
+div.cards {
+  margin-bottom: 10px;
+}
+
+.cards h4 {
   font-size: 1.2em;
   margin: 10px 0px;
   color: black;
 }
 
-.grid-cell h5 {
+.cards h5 {
   font-size: 1em;
   font-weight: normal;
 }
@@ -263,41 +224,6 @@ img.grid-icon {
   background-color: inherit !important; 
   max-height:150px;
   vertical-align: middle;
-}
-
-.grid-gallery {
-    height: 245px;
-    padding: 0;
-}
-
-.grid-gallery .figure img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#eee;
-}
-
-.grid-gallery a, .grid-gallery a:link {
-    border-bottom: none;
-}
-
-.grid-gallery .figure {
-   position: relative;
-   margin: 0;
-   padding: 0;
-   height: 100%;
-   width: 100%;
-}
-
-.grid-gallery .figure .caption {
-    position: absolute;
-    text-align: left;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: rgba(255,255,255,.9);
-    padding: 5px;
 }
 
 /**** GRID END ****/
@@ -515,4 +441,56 @@ Small Device Styles
 
 .bottom {
   padding-bottom: 40px;
+}
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+     font-size: 20px;
+   }
+
+  #project_tagline {
+     font-size: 14px;
+  }
+
+  #maintitle {
+     font-size: 14px;
+  } 
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+    padding-bottom: 0px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
 }
