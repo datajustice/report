@@ -1,164 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <title>Data Justice</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../../styles/scenarios.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.css">
+    <!-- add jQuery, necessary for Bootstrap js plugins -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-<nav class="research-nav">
-	<ul>
-		<li><a href="../research.html">Back to Research</a></li>
-	</ul>
-</nav>
-<h1>Research: Data Justice Scenarios</h1>
-<p>To understand how different datasets can be both beneficial and harmful to Detroit residents, we facilitated multiple focus groups to brainstorm use cases of different types of data and craft scenarios. These scenarios capture the perspectives of community organizers, homeowners, business owners, parents, artists and long-time residents of Detroit and offer specific ideas for promoting ethical uses of data.</p>
-<p>Four focus groups were facilitated over two months in the fall of 2016, drawing approximately thirty participants total. The first two focus groups lasted between 30-90 minutes and mostly included members of the DDJC and DCTP, and all participants were aware of Detroit’s Open Data Portal prior to the exercises. The third and largest focus group lasted two hours and participants represented a broad network of community organizers invited by members of the DDJC, and only a small handful were familiar with open data initiatives or the data portal to begin. Data scenario exercises were facilitated for a fourth time at the October 2016 Data Discotech hosted at Butzel Community Center.</p>
-<p>To craft each scenario, we introduced a single dataset offered through Detroit’s Open Data Portal. We chose datasets based on two criteria: that the dataset is considered one the “most accessed” by users; and, that it has a “Data Lens” view, a built-in feature from Socrata, the technology provider of Detroit’s data portal, that helpfully provides internal tools for charting, mapping and filtering a dataset without having to download it yourself. This was particularly useful for quickly and effectively introducing datasets to new users within the time constraints of the focus groups.</p>
-<p>All exercises involved a mix of silent write and group discussion, and prompted participants to examine the dataset presented and reflect on the following four key questions:
-<ul>
-	<li>Is this data neutral to begin? Is it clear how it is defined, collected or updated?</li>
-	<li>How could these data be used in beneficial ways to you or your communities?</li>
-	<li>How could these data be used in harmful ways to you or your communities?</li>
-	<li>What actions should be taken to maximize benefits and reduce harms? Whose responsibility are those actions (the community, the city, etc)?</li>
-</ul></p>
-<p>We used participant feedback to refine our prompts and facilitation methods between each session, learning to better manage our time and help draw the most concise ideas.</p>
-<h2>The scenarios</h2>
-<p>We created data justice scenarios for seven datasets in all over the four sessions of focus groups. Below, in no particular order, we share our perceived benefits and harms of each dataset covered, as well as any initial questions raised by participants about how that data is collected, maintained or updated by the City. Afterwards, we discuss common reflections among all the datasets about what actions could maximize the beneficial uses of these data.</p>
-<article class="accordion">
-	<section class="scenario" id="911calls">
-		<h4><a href="#911calls">911 Calls for Service</a></h4>
-		<p><b>Initial questions</b></p>
+<!-- START HEADER-->
+<div id="header">
+  <nav> 
+    <div class="color-bar">
+      <div class="color1">&nbsp;</div>
+      <div class="color2">&nbsp;</div>
+      <div class="color3">&nbsp;</div>
+    </div>
+    <div id="maintitle" class="main-nav"><a href="../../index.html">Data Justice</a></div>
+    <ul>
+      <!-- <li class=""><a href="../recommendations.html">Recommendations</a></li> -->
+      <li class=""><a href="../research.html">Research</a></li>
+      <li class=""><a href="../resources.html">Resources</a></li>
+    </ul>
+  </nav>
+</div> <!-- END HEADER -->
+
+<!-- START MAIN CONTENT -->
+<div class="container-fluid" id="main_content_wrap">
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+      <section id="main_content">
+		<h1>Research: Data Justice Scenarios</h1>
+		<p>To understand how different datasets can be both beneficial and harmful to Detroit residents, we facilitated multiple focus groups to brainstorm use 		cases of different types of data and craft scenarios. These scenarios capture the perspectives of community organizers, homeowners, business owners, 		parents, artists and long-time residents of Detroit and offer specific ideas for promoting ethical uses of data.</p>
+		<p>Four focus groups were facilitated over two months in the fall of 2016, drawing approximately thirty participants total. The first two focus groups 		lasted between 30-90 minutes and mostly included members of the DDJC and DCTP, and all participants were aware of Detroit’s Open Data Portal prior to the 		exercises. The third and largest focus group lasted two hours and participants represented a broad network of community organizers invited by members of 		the DDJC, and only a small handful were familiar with open data initiatives or the data portal to begin. Data scenario exercises were facilitated for a 		fourth time at the October 2016 Data Discotech hosted at Butzel Community Center.</p>
+		<p>To craft each scenario, we introduced a single dataset offered through Detroit’s Open Data Portal. We chose datasets based on two criteria: that the 		dataset is considered one the “most accessed” by users; and, that it has a “Data Lens” view, a built-in feature from Socrata, the technology provider of 		Detroit’s data portal, that helpfully provides internal tools for charting, mapping and filtering a dataset without having to download it yourself. This 		was particularly useful for quickly and effectively introducing datasets to new users within the time constraints of the focus groups.</p>
+		<p>All exercises involved a mix of silent write and group discussion, and prompted participants to examine the dataset presented and reflect on the 		following four key questions:
 		<ul>
-			<li>How can we know how accurate reported response times are?</li>
-			<li>Most calls appear to be hang-ups. How are these addressed?</li>
-		</ul>
-		<p><b>Perceived benefits</b></p>
-		<ul>
-			<li>Predicts where calls/events happen to efficiently allocate vehicles and resources and identify quick routes</li>
-			<li>Helps EMS and hospitals identify recurring patients and adjust their care plan</li>
-		</ul>
-		<p><b>Perceived harms</b></p>
-		<ul>
-			<li>Gives or reinforces impression of “bad” or “high crime” neighborhoods</li>
-			<li>Increases police presence in places with more calls, increasing profiling and arrests</	li>
-		</ul>
-	</section>
-	<section class="scenario" id="blight">
-		<h4><a href="#blight">Blight Violations</a></h4>
-		<p><b>Initial questions</b></p>
-		<ul>
-			<li>How does the City define “blight”? Was there a definition before the Duggan administration initiatives?</li>
-		</ul>
-		<p><b>Perceived benefits</b></p>
-		<ul>
-			<li>Shows “success” of City’s campaign to end blight</li>
-			<li>Supports organizers applying pressure to City to address complaints</li>
-			<li>Illustrates unequal enforcement and neighborhood targeting by ticket writers. What does “blight” look like in different neighborhoods?</li>
-			<li>Reveals discrepancies in where demolitions occur versus where blight is reported as highest through tickets</li>
-		</ul>
-		<p><b>Perceived harms</b></p>
-		<ul>
-			<li>Justifies divestment of services away from neighborhoods with more blight, like political intention to reallocate Hardest Hit Funds to demolitions rather than foreclosure relief</li>
-			<li>Effects property values and influences redlining practices by insurance companies</li>
-			<li>Concludes “bad” or “undesirable” areas based on old data, subjective definitions and enforcement</li>
-		</ul>
-	</section>
-	<section class="scenario" id="buildings">
-		<h4><a href="#buildings">Building Permits</a></h4>
-		<p><b>Initial questions</b></p>
-		<ul>
-			<li>How soon do permit data get published to the portal from point of application and approval?</li>
-		</ul>
-		<p><b>Perceived benefits</b></p>
-		<ul>
-			<li>Allows research about locations of future developments and whether they are initiated by existing neighbors or new developers</li>
-			<li>Identifies where businesses are expanding and helps neighbors advocate against ones that have a bad record with the community</li>
-		</ul>
-		<p><b>Perceived harms</b></p>
-		<ul>
-			<li>Disguises information and creates false narrative. For instance, most permits are for single family homes, but from individual or bulk buyers?</li>
-			<li>Informs structure of mortgages and types of loans available because no clear way to distinguish structures that need foundational changes versus just remodeling</li>
-		</ul>
-	</section>
-	<section class="scenario" id="crime">
-		<h4><a href="#crime">Crime Incidents</a></h4>
-		<p><b>Initial questions</b></p>
-		<ul>
-			<li>What about public crime incidents handled by entities outside of DPD, like Wayne State Police or other security forces?</li>
-		</ul>
-		<p><b>Perceived benefits</b></p>
-		<ul>
-			<li>Exposes details about how different crime ratings are calculated, especially in the case of maps or visuals that focus only on number of crimes, not their type</li>
-		</ul>
-		<p><b>Perceived harms</b></p>
-		<ul>
-			<li>Increases surveillance and policing in neighborhoods with higher crime levels in the past, justifying practices like “Stop and Frisk” now</li>
-			<li>Heat map creates assumptions of safety based only on quantity of crime, not type or severity. For example, a cluster of noise complaints look more severe than a single incident, even though that single incident may be an assault</li>
-		</ul>
-	</section>
-	<section class="scenario" id="demos">
-		<h4><a href="#demos">Demolitions</a></h4>
-		<p><b>Initial questions</b></p>
-		<ul>
-			<li>Which dataset(s) informs which structures get slated for demolition in the first place? Foreclosure data or structure condition data? Are those data available on the portal?</li>
-		</ul>
-		<p><b>Perceived benefits</b></p>
-		<ul>
-			<li>Helps neighbors research land that is sited for demolition to organize campaigns to prevent destruction, especially of historically significant sites</li>
-			<li>Names vendors and contractors performing demolitions and tracks if and how much money is staying in the City</li>
-		</ul>
-		<p><b>Perceived harms</b></p>
-		<ul>
-			<li>Data fails to acknowledge structures up for demo that are community assets or historic landmarks, and there is no clear path for disputing a record to prevent demolition</li>
-			<li>Prioritizes certain neighborhoods, and therefore influences the housing market and property values</li>
-		</ul>
-	</section>
-	<section class="scenario" id="improvedet">
-		<h4><a href="#improvedet">Improve Detroit Issues</a></h4>
-		<p><b>Initial questions</b></p>
-		<ul>
-			<li>Considering the digital divide, how many Detroiters can actually access this app? How many users have downloaded it to date?</li>
-			<li>Can non-Detroit residents report and up-vote issues? Is there a way to differentiate or flag these?</li>
-		</ul>
-		<p><b>Perceived benefits</b></p>
-		<ul>
-			<li>Saves residents money. For example, filling potholes means less car repairs, fixing water leaks benefits overall water bills, and cleaning up dumping boosts nearby property values</li>
-			<li>Encourages collective action, like once an issue is reported, rally your neighbors to up-vote it to top priority, and track progress of the issue</li>
-			<li>Follows trends in "improvements" to ideally illustrate how services are being delivered more efficiently by departments</li>
-		</ul>
-		<p><b>Perceived harms</b></p>
-		<ul>
-			<li>Access to the app accelerates divide in who gets city services, where they’re reported most, up-voted, and, therefore, responded to</li>
-			<li>Exaggerates false impressions of neighborhood issues and desirability, especially if non-residents are reporting or up-voting issues</li>
-			<li>Wrongfully penalizes residents. For example, your broken or uninsured car is parked on your street, but it gets reported as abandoned through the app, and is consequently towed and you owe a fine</li>
-			<li>Informs scamming, harassment and stealing; arsonists could find abandoned building locations, dumpers locate existing dump sites to add more to and be less likely to get caught, and metal scrappers locate abandoned vehicles</li>
-		</ul>
-	</section>
-	<section class="scenario" id="parcels">
-		<h4><a href="#parcels">Parcel Ownership Information</a></h4>
-		<p><b>Initial questions</b></p>
-		<ul>
-			<li>We know some egregious property speculators change their name frequently, if and how can it be tracked through the system?</li>
-		</ul>
-		<p><b>Perceived benefits</b></p>
-		<ul>
-			<li>Addresses and highlights issues of land speculation</li>
-			<li>Shows community groups who is buying up land around them</li>
-			<li>Allows neighbors to find out who owns poor condition structures and advocate for community accountability/for owner to care for their property</li>
-		</ul>
-		<p><b>Perceived harms</b></p>
-		<ul>
-			<li>Hastens the process of land speculation, especially for those who have technical skills to access and use the data</li>
-			<li>Eases the process of big developers buying up huge tracts of land quickly</li>
-		</ul>
-	</section>
-</article>
-<h2>Next steps</h2>
-<p>After generating these data justice scenarios about the perceived benefits and harms of multiple datasets and topics, we further prompted participants to re-examine these lists and extract specific actions that might be taken to maximize benefits and reduce harms. In many cases, participants identified similar actions despite the various topics and types of data.</p>
-<p>Common actions to maximize benefits often fell in two categories: first, to improve language provided directly through the portal, making the data more usable to those with less technical or policy expertise; and second, to initiate community-based research projects with the goal of highlighting discrepancies in City service delivery or code enforcement. Conducting research to investigate inconsistencies in open data is an especially important action to ensure that open data does not reinforce bad reputations or false impressions of certain Detroit neighborhoods, for fear of further justifying divestment and discrimination.</p>
-<p>Of these actions identified by our focus group participants, the first falls to the responsibility of the City to provide more thorough documentation, engagement and training, the second calls on organizers and community-based data practitioners to mobilize around some of these big research questions that can be answered through open data.</p>
-<p>As we continue working on data justice initiatives through the DDJC and DCTP, we hope to continue facilitating these scenarios to more deeply understand the perceived positive and negative impacts of open data to our communities and eventually tackle some of the research questions that arise from them.</p>
+			<li>Is this data neutral to begin? Is it clear how it is defined, collected or updated?</li>
+			<li>How could these data be used in beneficial ways to you or your communities?</li>
+			<li>How could these data be used in harmful ways to you or your communities?</li>
+			<li>What actions should be taken to maximize benefits and reduce harms? Whose responsibility are those actions (the community, the city, etc)?</li>
+		</ul></p>
+		<p>We used participant feedback to refine our prompts and facilitation methods between each session, learning to better manage our time and help draw the 		most concise ideas.</p>
+		<h2>The scenarios</h2>
+		<p>We created data justice scenarios for seven datasets in all over the four sessions of focus groups. Below, in no particular order, we share our 		perceived benefits and harms of each dataset covered, as well as any initial questions raised by participants about how that data is collected, maintained 		or updated by the City. Afterwards, we discuss common reflections among all the datasets about what actions could maximize the beneficial uses of these 		data.</p>
+		<article class="accordion">
+			<section class="scenario" id="911calls">
+				<h4><a href="#911calls">911 Calls for Service</a></h4>
+				<p><b>Initial questions</b></p>
+				<ul>
+					<li>How can we know how accurate reported response times are?</li>
+					<li>Most calls appear to be hang-ups. How are these addressed?</li>
+				</ul>
+				<p><b>Perceived benefits</b></p>
+				<ul>
+					<li>Predicts where calls/events happen to efficiently allocate vehicles and resources and identify quick routes</li>
+					<li>Helps EMS and hospitals identify recurring patients and adjust their care plan</li>
+				</ul>
+				<p><b>Perceived harms</b></p>
+				<ul>
+					<li>Gives or reinforces impression of “bad” or “high crime” neighborhoods</li>
+					<li>Increases police presence in places with more calls, increasing profiling and arrests</	li>
+				</ul>
+			</section>
+			<section class="scenario" id="blight">
+				<h4><a href="#blight">Blight Violations</a></h4>
+				<p><b>Initial questions</b></p>
+				<ul>
+					<li>How does the City define “blight”? Was there a definition before the Duggan administration initiatives?</li>
+				</ul>
+				<p><b>Perceived benefits</b></p>
+				<ul>
+					<li>Shows “success” of City’s campaign to end blight</li>
+					<li>Supports organizers applying pressure to City to address complaints</li>
+					<li>Illustrates unequal enforcement and neighborhood targeting by ticket writers. What does “blight” look like in different neighborhoods?</li>
+					<li>Reveals discrepancies in where demolitions occur versus where blight is reported as highest through tickets</li>
+				</ul>
+				<p><b>Perceived harms</b></p>
+				<ul>
+					<li>Justifies divestment of services away from neighborhoods with more blight, like political intention to reallocate Hardest Hit Funds to 		demolitions rather than foreclosure relief</li>
+					<li>Effects property values and influences redlining practices by insurance companies</li>
+					<li>Concludes “bad” or “undesirable” areas based on old data, subjective definitions and enforcement</li>
+				</ul>
+			</section>
+			<section class="scenario" id="buildings">
+				<h4><a href="#buildings">Building Permits</a></h4>
+				<p><b>Initial questions</b></p>
+				<ul>
+					<li>How soon do permit data get published to the portal from point of application and approval?</li>
+				</ul>
+				<p><b>Perceived benefits</b></p>
+				<ul>
+					<li>Allows research about locations of future developments and whether they are initiated by existing neighbors or new developers</li>
+					<li>Identifies where businesses are expanding and helps neighbors advocate against ones that have a bad record with the community</li>
+				</ul>
+				<p><b>Perceived harms</b></p>
+				<ul>
+					<li>Disguises information and creates false narrative. For instance, most permits are for single family homes, but from individual or bulk 		buyers?</li>
+					<li>Informs structure of mortgages and types of loans available because no clear way to distinguish structures that need foundational changes 		versus just remodeling</li>
+				</ul>
+			</section>
+			<section class="scenario" id="crime">
+				<h4><a href="#crime">Crime Incidents</a></h4>
+				<p><b>Initial questions</b></p>
+				<ul>
+					<li>What about public crime incidents handled by entities outside of DPD, like Wayne State Police or other security forces?</li>
+				</ul>
+				<p><b>Perceived benefits</b></p>
+				<ul>
+					<li>Exposes details about how different crime ratings are calculated, especially in the case of maps or visuals that focus only on number of 		crimes, not their type</li>
+				</ul>
+				<p><b>Perceived harms</b></p>
+				<ul>
+					<li>Increases surveillance and policing in neighborhoods with higher crime levels in the past, justifying practices like “Stop and Frisk” now</		li>
+					<li>Heat map creates assumptions of safety based only on quantity of crime, not type or severity. For example, a cluster of noise complaints 		look more severe than a single incident, even though that single incident may be an assault</li>
+				</ul>
+			</section>
+			<section class="scenario" id="demos">
+				<h4><a href="#demos">Demolitions</a></h4>
+				<p><b>Initial questions</b></p>
+				<ul>
+					<li>Which dataset(s) informs which structures get slated for demolition in the first place? Foreclosure data or structure condition data? Are 		those data available on the portal?</li>
+				</ul>
+				<p><b>Perceived benefits</b></p>
+				<ul>
+					<li>Helps neighbors research land that is sited for demolition to organize campaigns to prevent destruction, especially of historically 		significant sites</li>
+					<li>Names vendors and contractors performing demolitions and tracks if and how much money is staying in the City</li>
+				</ul>
+				<p><b>Perceived harms</b></p>
+				<ul>
+					<li>Data fails to acknowledge structures up for demo that are community assets or historic landmarks, and there is no clear path for disputing 		a record to prevent demolition</li>
+					<li>Prioritizes certain neighborhoods, and therefore influences the housing market and property values</li>
+				</ul>
+			</section>
+			<section class="scenario" id="improvedet">
+				<h4><a href="#improvedet">Improve Detroit Issues</a></h4>
+				<p><b>Initial questions</b></p>
+				<ul>
+					<li>Considering the digital divide, how many Detroiters can actually access this app? How many users have downloaded it to date?</li>
+					<li>Can non-Detroit residents report and up-vote issues? Is there a way to differentiate or flag these?</li>
+				</ul>
+				<p><b>Perceived benefits</b></p>
+				<ul>
+					<li>Saves residents money. For example, filling potholes means less car repairs, fixing water leaks benefits overall water bills, and cleaning 		up dumping boosts nearby property values</li>
+					<li>Encourages collective action, like once an issue is reported, rally your neighbors to up-vote it to top priority, and track progress of the 		issue</li>
+					<li>Follows trends in "improvements" to ideally illustrate how services are being delivered more efficiently by departments</li>
+				</ul>
+				<p><b>Perceived harms</b></p>
+				<ul>
+					<li>Access to the app accelerates divide in who gets city services, where they’re reported most, up-voted, and, therefore, responded to</li>
+					<li>Exaggerates false impressions of neighborhood issues and desirability, especially if non-residents are reporting or up-voting issues</li>
+					<li>Wrongfully penalizes residents. For example, your broken or uninsured car is parked on your street, but it gets reported as abandoned 		through the app, and is consequently towed and you owe a fine</li>
+					<li>Informs scamming, harassment and stealing; arsonists could find abandoned building locations, dumpers locate existing dump sites to add 		more to and be less likely to get caught, and metal scrappers locate abandoned vehicles</li>
+				</ul>
+			</section>
+			<section class="scenario" id="parcels">
+				<h4><a href="#parcels">Parcel Ownership Information</a></h4>
+				<p><b>Initial questions</b></p>
+				<ul>
+					<li>We know some egregious property speculators change their name frequently, if and how can it be tracked through the system?</li>
+				</ul>
+				<p><b>Perceived benefits</b></p>
+				<ul>
+					<li>Addresses and highlights issues of land speculation</li>
+					<li>Shows community groups who is buying up land around them</li>
+					<li>Allows neighbors to find out who owns poor condition structures and advocate for community accountability/for owner to care for their 		property</li>
+				</ul>
+				<p><b>Perceived harms</b></p>
+				<ul>
+					<li>Hastens the process of land speculation, especially for those who have technical skills to access and use the data</li>
+					<li>Eases the process of big developers buying up huge tracts of land quickly</li>
+				</ul>
+			</section>
+		</article>
+		<h2>Next steps</h2>
+		<p>After generating these data justice scenarios about the perceived benefits and harms of multiple datasets and topics, we further prompted participants 		to re-examine these lists and extract specific actions that might be taken to maximize benefits and reduce harms. In many cases, participants identified 		similar actions despite the various topics and types of data.</p>
+		<p>Common actions to maximize benefits often fell in two categories: first, to improve language provided directly through the portal, making the data more 		usable to those with less technical or policy expertise; and second, to initiate community-based research projects with the goal of highlighting 		discrepancies in City service delivery or code enforcement. Conducting research to investigate inconsistencies in open data is an especially important 		action to ensure that open data does not reinforce bad reputations or false impressions of certain Detroit neighborhoods, for fear of further justifying 		divestment and discrimination.</p>
+		<p>Of these actions identified by our focus group participants, the first falls to the responsibility of the City to provide more thorough documentation, 		engagement and training, the second calls on organizers and community-based data practitioners to mobilize around some of these big research questions that 		can be answered through open data.</p>
+		<p>As we continue working on data justice initiatives through the DDJC and DCTP, we hope to continue facilitating these scenarios to more deeply understand the perceived positive and negative impacts of open data to our communities and eventually tackle some of the research questions that arise from them.</p>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- end main content div -->
+
+<!-- START FOOTER -->
+<div id="footer_wrap" class="container-fluid outer">
+  <!-- <div class="center-arrow-down-ft" align="center"></div> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 bottom">
+        <p>Collaborative project between:</p>
+        <p>
+          <a href="http://detroitdjc.org/">Detroit Digital Justice Coalition</a><br />
+          <a href="http://www.detroitcommunitytech.org">Detroit Community Technology Project</a>
+        </p>
+        <p>Inspired by the <a href="https://communitytechnology.github.io/">Community Technology Field Guide</a></p>
+        <div style="margin-top: 30px; padding-top: 30px; border-top:thin solid gray">
+          <p>Documentation is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative CommonAttribution-ShareAlike 4.0 International License</a>.</p><p>Please share any derivative works.</p>
+        </div>
+      </div> <!-- end col -->
+    </div> <!-- end row -->
+  </div> <!-- end container -->
+</div> <!-- END FOOTER -->
 </body>
 </html>
