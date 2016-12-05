@@ -182,7 +182,7 @@ div#headertext {
 .flip-container, .front, .back {
     width: 100%;
     max-width: 600px;
-    min-height: 20em;
+    min-height: 27em;
 }
 
 .flipper {
@@ -502,6 +502,7 @@ Small Device Styles
   .grid-row {  display: block; }
   .research-module, .grid-gallery { width: 100%; float: left;}
   #maintitle { font-size: 18px; }
+  .flip-container, .front, .back { min-height: 23em; }
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
