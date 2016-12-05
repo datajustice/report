@@ -28,11 +28,19 @@ h1, h2, h3, h4, h5, h6 {
   color:#222222;
 }
 
+.toph {
+  margin-top: 30px;
+}
+
 
 h1 {
   font-size: 34px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
 }
 
 h3 {
@@ -189,8 +197,9 @@ div#headertext {
   position: absolute;
   top: 0;
   left: 0;
-  border: thin solid lightgrey;
-  background-color: #eee;
+  border: 4px solid #d33a95;
+  border-radius: 6px;
+  background-color: rgba(8,107,181, .1);
   text-align: center;
   padding: 15px;
 }
@@ -389,51 +398,80 @@ p.tip:before {
   color: white;
 }
 
+/**
 .content:before, .content:after, section:before, section:after {
     display: table;
     clear:both;
     content: " ";
 }
+**/
 
-.content {
+.lastrow {
   margin-top: 50px;
 }
 
 
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
+/************************************************
+Grid on Research page
+************************************************/
 
-@media screen and (max-width: 620px) {
- .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
- .right-side { width: 100%; margin: 0;}
- #sidemenu { margin: 0; }
- .grid { border-spacing: 0; }
- .grid-row {  display: block; }
- .grid-cell, .grid-gallery { width: 100%; float: left;}
- #maintitle { font-size: 18px; }
+.grid {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border: separate;
+    border-spacing: 1.5em;
+    margin-left: -2em;
+    margin-right: -1.5em;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
- .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
- .right-side { width: 100%; margin: 0;}
-  #sidemenu { margin: 0; font-size: 14px;}
- .grid {     border-spacing: 0; }
- .grid-row {  display: block; }
- .grid-cell, .grid-gallery { width: 100%; float: left; }
- #maintitle { font-size: 18px; }
+.grid-row {
+    display: table-row;
+    width: 100%;
 }
-
 
 .research-module {
-  width: 40%;
-  height: 60%;
-  margin: 5px;
-  padding: 10px;
-  float: left;
-  border: 1px solid grey;
-  text-align: center;
+    display: table-cell;
+    width: 50%;
+    border: 5px solid #086bb5;
+    border-radius: 6px;
+    background-color: rgba(106,194,142, .2);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
 }
+
+.research-module:hover {
+    background-color: white;
+}
+
+.research-module h3 {
+  font-size: 1.3em;
+  margin: 15px 0px;
+  color: black;
+}
+
+.research-module h5 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+
+.research-module a, .research-module a:link {
+    border-bottom: none;
+}
+
+.research-module a.rschcell {
+    display:block;
+    text-decoration:none;
+}
+
+p.rschcell {
+    font-weight: 400 !important;
+}
+
+/**** GRID END ****/
 
 .textblocks li {
   margin-bottom: 30px;
@@ -447,9 +485,36 @@ Small Device Styles
   padding-bottom: 40px;
 }
 
+#footer_wrap p.topp {
+  margin-top: 30px;
+}
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
+
+@media screen and (max-width: 766px) {
+  #main_content_wrap { padding-left: 50px;}
+  .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
+  .right-side { width: 100%; margin: 0;}
+  #sidemenu { margin: 0; }
+  .grid { border-spacing: 0; }
+  .grid-row {  display: block; }
+  .research-module, .grid-gallery { width: 100%; float: left;}
+  #maintitle { font-size: 18px; }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #main_content_wrap { padding-left: 20px;}
+ .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
+ .right-side { width: 100%; margin: 0;}
+  #sidemenu { margin: 0; font-size: 14px;}
+ .grid {     border-spacing: 0; }
+ .grid-row {  display: block; }
+ .research-module, .grid-gallery { width: 100%; float: left; }
+ #maintitle { font-size: 18px; }
+}
+
 
 @media screen and (max-width: 480px) {
   body {
