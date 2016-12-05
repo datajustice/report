@@ -395,6 +395,10 @@ p.tip:before {
     content: " ";
 }
 
+.content {
+  margin-top: 50px;
+}
+
 
 /*******************************************************************************
 Small Device Styles
