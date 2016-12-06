@@ -60,6 +60,12 @@ footer p {
   color: #f2f2f2;
 }
 
+p.cardfront {
+  font-size: 1.3em;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 a {
   text-decoration: none; 
   color: #007edf; 
@@ -197,9 +203,9 @@ div#headertext {
   position: absolute;
   top: 0;
   left: 0;
-  border: 4px solid #d33a95;
+  border: 4px solid #086bb5;
   border-radius: 6px;
-  background-color: rgba(8,107,181, .1);
+  background-color: rgba(106, 194, 142, .15);
   text-align: center;
   padding: 15px;
 }
@@ -337,14 +343,14 @@ nav a:hover {
 }
 
 a, a:visited, a:link { 
-  border-bottom: 2px solid #e8ff00;
+  border-bottom: 2px solid #fe739b;
   color: inherit;
   font-weight:bold;
   text-decoration: none;
 }
 
 a:hover { 
-    border-bottom: 2px solid #fe739b;
+    border-bottom: 2px solid #e8ff00;
 }
 
 a.simple, a.simple:link {
@@ -493,23 +499,57 @@ p.rschcell {
 Small Device Styles
 *******************************************************************************/
 
+@media screen and (max-width: 1100px) {
+  .flip-container, .front, .back {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .front h3, .back h3 {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  p.cardfront {
+    font-size: 1.1em;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-device-width: 753px) and (max-width: 959px) {
+  p.cardfront {
+    font-size: 1.3em;
+  }
+
+  .flip-container, .front, .back {
+    width: 100%;
+    max-width: 600px;
+    min-height: 25em;
+  }
+}
+
 @media screen and (max-width: 766px) {
   #main_content_wrap { padding-left: 50px;}
   .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
   .right-side { width: 100%; margin: 0;}
-  #sidemenu { margin: 0; }
   .grid { border-spacing: 0; }
   .grid-row {  display: block; }
   .research-module, .grid-gallery { width: 100%; float: left;}
   #maintitle { font-size: 18px; }
   .flip-container, .front, .back { min-height: 23em; }
+  .cards .col-md-5 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #main_content_wrap { padding-left: 20px;}
  .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
  .right-side { width: 100%; margin: 0;}
-  #sidemenu { margin: 0; font-size: 14px;}
  .grid {     border-spacing: 0; }
  .grid-row {  display: block; }
  .research-module, .grid-gallery { width: 100%; float: left; }
@@ -518,6 +558,9 @@ Small Device Styles
 
 
 @media screen and (max-width: 480px) {
+
+  #main_content_wrap { padding-left: 23px;}
+
   body {
     font-size:14px;
   }
@@ -529,14 +572,17 @@ Small Device Styles
 
   #project_title {
      font-size: 20px;
+     padding-top: 6px !important;
    }
 
   #project_tagline {
      font-size: 14px;
+     padding: 0px 5px;
   }
 
   #maintitle {
      font-size: 14px;
+     margin-left: 15px;
   } 
 
   h1 {
@@ -562,5 +608,13 @@ Small Device Styles
 
   h6 {
     font-size: 12px;
+  }
+
+  nav ul {
+    margin: 0px 3% 0px 5%;
+  }
+
+  nav ul li {
+    padding-right: 0px;
   }
 }
