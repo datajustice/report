@@ -541,6 +541,14 @@ p.rschcell {
   margin-top: 30px;
 }
 
+div.surveys p {
+  padding-right: 5% !important;
+}
+
+div.findings {
+  background-color: #f1f1f1;
+}
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
