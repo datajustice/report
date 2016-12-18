@@ -40,20 +40,24 @@ h1 {
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 25px;
+  font-size: 2em;
+  color: #086bb5;
 }
 
 h3 {
-  font-size: 24px;
-  margin: 50px 0 10px 0;
+  font-size: 22px;
+  margin: 25px 0 10px 0;
+  color: #6AC28E;
 }
 
 h4 {
-  font-size: 21px;
+  font-size: 19px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 17px;
+  color: #696969;
 }
 
 footer p {
@@ -166,7 +170,7 @@ p.list-title {
   font-weight: 600;
 }
 
-h3.list-title {
+h2.list-title {
   margin-top: 10px;
   padding-top: 10px;
 }
@@ -207,7 +211,7 @@ ul.survey-about {
 }
 
 ul.survey-about li {
-  color: #6AC28E;
+  color: #3f3f3f;
   font-size: 1.2em;
   font-weight: 500;
 }
@@ -671,4 +675,18 @@ Small Device Styles
   nav ul li {
     padding-right: 0px;
   }
+}
+
+.bottom-margin-0 {
+  margin-bottom: 0px !important;
+}
+
+div.h1-graphic {
+  width: 100%;
+  height: 20px;
+  background: #6AC28E;
+  margin-top: -13px;
+  margin-right: 5px;
+  background-image: url("../images/h1-bar.png");
+  background-repeat: horizontal;
 }
