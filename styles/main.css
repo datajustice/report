@@ -8,7 +8,7 @@ ul {
 }
 
 ul li {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 body {
@@ -53,6 +53,7 @@ h3 {
 
 h4 {
   font-size: 19px;
+  margin-bottom: 0px;
 }
 
 h5 {
@@ -413,6 +414,19 @@ a.simple:hover {
  font-weight: 800;
 }
 
+p.survey-sections {
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
+ul.survey-sections-list {
+  list-style-type: none;
+}
+
+ul.survey-sections-list li {
+  padding-bottom: 5px;
+}
+
 /***** This isn't useful right now, but in case we decide to add tool tips: ******/
 
 p.tip {
@@ -551,7 +565,7 @@ p.rschcell {
 }
 
 div.surveys p {
-  padding-right: 5% !important;
+  padding-right: 4% !important;
 }
 
 div.findings {
@@ -689,6 +703,7 @@ Small Device Styles
 
 .bottom-margin-0 {
   margin-bottom: 0px !important;
+  padding-bottom: 0px;
 }
 
 div.h1-graphic {
