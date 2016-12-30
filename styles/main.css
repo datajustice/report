@@ -91,6 +91,11 @@ img {
   border: none;
 }
 
+img.full-width {
+  width: 100%;
+  max-width: 739px;
+}
+
 p img {
   display: inline;
   margin: 0;
@@ -195,11 +200,11 @@ ul.survey-about li ul li {
   padding-top: 5px;
   padding-bottom: 0px;
   font-size: inherit;
-  border: 1px solid #d33a95;
+  border-bottom: 1px solid #d33a95;
   width: 80%;
   padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 3px;
+  padding-bottom: 0px;
+  margin-top: 5px;
 }
 
 ul.survey-about {
@@ -551,6 +556,11 @@ div.surveys p {
 
 div.findings {
   background-color: #f1f1f1;
+}
+
+.top {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 /*******************************************************************************

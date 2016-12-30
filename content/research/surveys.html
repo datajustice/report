@@ -13,6 +13,12 @@
    	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
    	<script src="https://code.highcharts.com/highcharts.js"></script>
     <script type="text/javascript" src="../../scripts/survey-charts.js"></script>
+
+    <!-- add Bootstrap js -->
+    <script type="text/javascript" src="../../scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../../scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../scripts/npm.js"></script>
+
 </head>
 <body>
 <!-- START HEADER-->
@@ -37,7 +43,7 @@
 <!-- START MAIN CONTENT -->
 <div class="container-fluid" id="main_content_wrap">
   <div class="row">
-    <div class="col-sm-offset-2 col-sm-8">
+    <div class="col-sm-offset-1 col-lg-offset-2 col-sm-10 col-lg-8">
       <section id="main_content">
       <p class="breadcrumb"><a href="../../index.html">Home</a> / <a href="../research.html">Research</a> / Data Justice Surveys</p>
         <h1 class="toph">Research Method: Data Justice Surveys</h1>
@@ -45,27 +51,32 @@
           <p>The Data Justice Survey is available to participants at each Data Discotech and serves as a tool to gauge familiarity with government data, perceptions of how open data is collected and used, and which data sets are most important for our communities to have access to.</p> 
           <p>Until now, survey answers have only been used by the DDJC to identify ways to make upcoming Data Discotech station content more relevant and meaningful. Our findings are now being shared in full below to offer a deeper understanding of open data in Detroit.</p>
 
-          <div class="row">
-          <div class="col-md-7 surveys">
-            <h2 class="list-title">The Survey</h2>
-            <ul class="survey-about">
-              <li>&#9745; 33 total questions</li>
-              <li>&#9745; All responses are optional</li>  
-              <li>&#9745; four sections:
-                <ul><li>first impressions of open data</li> <li>how data is used</li> <li>potential datasets</li> <li>personal contact information</li></ul>
-            </ul> 
-            <h3>Our Respondents</h3>
-              <h4>How many:</h4> 
+        <div class="row">  
+          <div class="col-sm-12"> <h2 class="list-title">About the Survey</h2> </div>
+        </div>
+
+        <div class="row">   <!-- start survey about row -->
+          <div class="col-md-7 surveys">  <!-- start survey about column -->
+            <h3 class="top"> The Basics </h3>
+            <h4>Content:</h4> 
+            <p>33 questions, all responses optional</p>
+              <p>Four sections:</p>
+                <ul style="list-style-type: none;"><li>1. First impressions of open data</li> <li>2. How data is used</li> <li>3. Potential datasets</li> <li>4. Personal contact information</li></ul>
+            <h4>Number of Responses:</h4> 
               <p>39 (as of November 2016), ongoing </p>
-              <h4>Who:</h4> 
+            <h4>Who:</h4> 
               <p>We surveyed Data Discotech attendees between September 2015 and October 2016. Therefore, respondents are primarily Detroit residents who live in or have a connection to the District where the Data Discotech was hosted.</p>
-              <h5>Self-reported race</h5>
+          </div> <!-- end survey about column -->
+
+          <div class="col-md-5">   <!-- start survey respondents column -->
+            <h3 class="top">Respondent Identities</h3>
+              <h4>Race (self-reported)</h5>
                 <ul>
                   <li>52.9% “White”</li>
                   <li>20.6% “African American” or “Black”
                   <li>17.6% “Latino” or “Mexican American”</li> 
                   </ul>
-              <h5>Other identity categories (self-identified)</h5>
+              <h4>Other identity categories (self-reported)</h5>
                 <ul>
                   <li>61.8% “having 4 or more years of higher education”</li>
                   <li>58.8% “professional middle class”</li>
@@ -74,28 +85,62 @@
                   <li>23.5% “LGBTQ”</li>
                   <li>17.6% “receiving public benefits (welfare, disability, veterans, etc.)”</li>
                 </ul>
-          </div> <!-- end survey about column -->
-          <div class="col-md-5">
-            <h2 class="list-title">Locations</h2>
-            <img src="../../images/district-map.png" alt="district map of Detroit, with Districts 3, 4, 6, and 7 shaded in" style="padding-top: 0px;">
-            <p>So far, Data Discotechs have been held in: 
-            <ul><li>District 4 at the Samaritan Center in Sept. 2015</li> <li>District 6 at Grace in Action in April 2016</li> <li>District 3 at the Boggs School in June 2016</li> <li>District 7 at the Butzel Community Center in Oct. 2016</li> </ul>
+          </div> <!-- end survey respondents column -->
+        </div> <!-- end survey about row -->
+
+
+        <div class="row"> <div class="col-sm-12"> <h3 class="list-title">Locations Surveyed</h3> </div> </div>
+        <div class="row">  <!-- begin location row -->
+          <div class="col-md-7 surveys">
+
+            <img src="../../images/district-map.png" alt="district map of Detroit, with Districts 3, 4, 6, and 7 shaded in" class="full-width" style="padding-top: 0px;">
+          </div> <!-- end location map column -->
+
+          <div class="col-md-5">   <!-- begin location text column -->
+            <p class="top">So far, Data Discotechs have been held in: 
+            <ul><li>District 4: Samaritan Center, September 2015</li> <li>District 6: Grace in Action, April 2016</li> <li>District 3: Boggs School, June 2016</li> <li>District 7: Butzel Community Center, October 2016</li> </ul>
             <p>Data Discotechs hope to travel to the remaining Districts throughout 2016-2017, continuing to offer this survey and building a more geographically-inclusive sample of respondents.</p>
-          </div> <!-- end column 2 -->
-          </div> <!-- end graphics row -->
+          </div> <!-- end location text column -->
+        </div> <!-- end location row -->
+
     </div> <!-- end column -->    
-  </div>  <!-- end row -->   
-      <div class="row findings">
-        <div class="col-sm-offset-2 col-sm-8">
-          <h2>Our findings</h2>
+  </div>  <!-- end row -->  
+
+
+  <div class="row findings">
+    <div class="col-sm-offset-1 col-lg-offset-2 col-sm-10 col-lg-8">
+
+<!-- ******************* TABBED NAVIGATION FOR FINDINGS *********************************/ -->
+<div><h2>Our Findings</h2></div>
+<div id="exTab1"> 
+<ul  class="nav nav-pills">
+      <li class="active">
+        <a href="#1a" data-toggle="tab">Data Portal Awareness</a>
+      </li>
+      <li><a href="#2a" data-toggle="tab">Government and Consent</a>
+      </li>
+      <li><a href="#3a" data-toggle="tab">Sharing</a>
+      </li>
+      <li><a href="#4a" data-toggle="tab">Benefits and Harms</a>
+      </li>
+      <li><a href="#5a" data-toggle="tab">Desired Datasets</a>
+      </li>
+    </ul>
+
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1a">
           <p><strong>79.5% of respondents had heard of the City of Detroit's Open Data Portal</p>
-          <p>51.5% of those cite a “Data Discotech”, “DDJC” or “AMP” as their first source of information.</strong></p> 
+          <p>51.5% of those cite a “Data Discotech”, “DDJC” or “AMP” as their first source of information.</strong></p>
+           <p>In order to find out how to raise awareness of open data in Detroit, we asked, “which tactic do you think would be MOST effective at informing Detroiters about the portal and getting them to use it?” Most participants answered “free 101 trainings for the general public at libraries or community centers” and “advanced trainings in how to use and analyze the data for community leaders.”</p>
+
+          <div class="chart" id="tactic-container"></div>
+        </div>
+        <div class="tab-pane" id="2a">
           <p style="margin-bottom: 1px"><strong>50% had been asked by a government agency to provide personal data they did not feel comfortable sharing</strong></p>
           <p style="margin-top: 1px"> This information ranged from providing a social security number or bank account over email to questions about gender, marital status, income, criminal or arrest history, mental health and medical information.</p>
           <p><strong>37% have experienced a government agency collecting or sharing their information without consent.</strong></p>
-          <p>In order to find out how to raise awareness of open data in Detroit, we asked, “which tactic do you think would be MOST effective at informing Detroiters about the portal and getting them to use it?” Most participants answered “free 101 trainings for the general public at libraries or community centers” and “advanced trainings in how to use and analyze the data for community leaders.”</p>
-
-          <div class="chart" id="tactic-container"></div>
+        </div>
+        <div class="tab-pane" id="3a">
           <p>Section two of the survey asks participants to rate on a scale of 1-5 whether a dataset “should be shared widely without restrictions” (1) or “should not even be collected, much less shared” (5).</p>
           <p>Participants think that the following datasets should be most widely shared:
           <ul>
@@ -120,6 +165,8 @@
             <li>“Addresses where domestic violence complaints reported to DPD occurred”</li>
           </ul></p>
           <div class="chart" id="sharable-container"></div>
+        </div>
+          <div class="tab-pane" id="4a">
           <p>In the third section of the survey, participants were presented with a list of all datasets currently available on the City of Detroit’s portal and asked which data had the potential to be most useful or most harmful to themselves, their family or community.</p>
           <p>Through open-ended responses, many participants said that basically every dataset on the list could likely provide some value. To explain their choices, they offered anecdotes like:
           <ul>
@@ -136,6 +183,8 @@
             <li>“Lead to more policing”</li>
             <li>“Put undocumented people in danger”</li>
           </ul></p>
+        </div>
+        <div class="tab-pane" id="5a">
           <p>Lastly, participants were asked to list any datasets that they would like added to the portal. Popular responses included: 
           <ul>
             <li>“Charter school data - who has the charter, their status, how many charters, how much funding”</li>
@@ -145,10 +194,25 @@
             <li>“Government accountability - police activities, police brutality, political campaign info/spending” and “city council minutes”</li>
             <li>“Information on pollution, air and water quality are important”</li>
           </ul></p>
+        </div>
+      </div>
+  </div>
+
+
+<hr></hr>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+
+<!-- ******************* END TABBED NAV FOR FINDINGS ************************************* -->           
+        
         </div> <!-- end column -->
       </div>  <!-- end row -->
       <div class="row">
-        <div class="col-sm-offset-2 col-sm-8">
+        <div class="col-sm-offset-1 col-lg-offset-2 col-sm-10 col-lg-8">
           <h2>Next steps</h2>
           <p>As the DDJC and DCTP continue to host Data Discotechs, we plan to continue to make this data justice survey available to participants. We look forward to both growing our survey sample and measuring if and how responses change as the City of Detroit works to publish more data and engage users.</p>
         </div> <!--  end column -->
@@ -166,7 +230,7 @@
   <!-- <div class="center-arrow-down-ft" align="center"></div> -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-offset-2 col-md-8 bottom">
+      <div class="col-sm-offset-1 col-lg-offset-2 col-sm-10 col-lg-8 bottom">
         <p>Collaborative project between:</p>
         <p>
           <a href="http://detroitdjc.org/" target="_blank">Detroit Digital Justice Coalition</a><br />
@@ -181,4 +245,6 @@
   </div> <!-- end container -->
 </div> <!-- END FOOTER -->
 </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </html>
