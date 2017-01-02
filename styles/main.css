@@ -8,7 +8,7 @@ ul {
 }
 
 ul li {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 body {
@@ -53,6 +53,7 @@ h3 {
 
 h4 {
   font-size: 19px;
+  margin-bottom: 0px;
 }
 
 h5 {
@@ -89,6 +90,11 @@ img {
   max-width: 739px;
   padding: 10px 5px 10px 5px;
   border: none;
+}
+
+img.full-width {
+  width: 100%;
+  max-width: 739px;
 }
 
 p img {
@@ -195,11 +201,11 @@ ul.survey-about li ul li {
   padding-top: 5px;
   padding-bottom: 0px;
   font-size: inherit;
-  border: 1px solid #d33a95;
+  border-bottom: 1px solid #d33a95;
   width: 80%;
   padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 3px;
+  padding-bottom: 0px;
+  margin-top: 5px;
 }
 
 ul.survey-about {
@@ -408,6 +414,19 @@ a.simple:hover {
  font-weight: 800;
 }
 
+p.survey-sections {
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
+ul.survey-sections-list {
+  list-style-type: none;
+}
+
+ul.survey-sections-list li {
+  padding-bottom: 5px;
+}
+
 /***** This isn't useful right now, but in case we decide to add tool tips: ******/
 
 p.tip {
@@ -546,11 +565,16 @@ p.rschcell {
 }
 
 div.surveys p {
-  padding-right: 5% !important;
+  padding-right: 4% !important;
 }
 
 div.findings {
   background-color: #f1f1f1;
+}
+
+.top {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 /*******************************************************************************
@@ -679,6 +703,7 @@ Small Device Styles
 
 .bottom-margin-0 {
   margin-bottom: 0px !important;
+  padding-bottom: 0px;
 }
 
 div.h1-graphic {
