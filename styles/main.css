@@ -99,6 +99,10 @@ img.full-width {
   max-width: 739px;
 }
 
+img.map {
+  max-width: 600px;
+}
+
 p img {
   display: inline;
   margin: 0;
@@ -229,8 +233,11 @@ ul.survey-about li {
 }
 
 blockquote {
-  border-left-color: #6AC28E !important;
+  border-left-color: #fe739b !important;
   margin-bottom: 2px !important;
+}
+.chart {
+  width: 100% !important;
 }
 
 /**** GRID START ****/
