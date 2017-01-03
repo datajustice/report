@@ -267,6 +267,10 @@ ul.survey-about li {
   text-align: left;
 }
 
+.front img {
+  margin-top: 30px;
+}
+
 div.cards {
   margin-bottom: 10px;
 }
@@ -713,4 +717,8 @@ div.h1-graphic {
   margin-right: 5px;
   background-image: url("../images/h1-bar.png");
   background-repeat: horizontal;
+}
+
+.front img {
+  margin-top: 20px;
 }
