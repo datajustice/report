@@ -28,9 +28,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .toph {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
+.toph-main {
+  margin-top: 30px;
+}
 
 h1 {
   font-size: 34px;
@@ -221,6 +224,15 @@ ul.survey-about li {
   font-weight: 500;
 }
 
+.pad-left-0 {
+  padding-left: 4px;
+}
+
+blockquote {
+  border-left-color: #6AC28E !important;
+  margin-bottom: 2px !important;
+}
+
 /**** GRID START ****/
 
 
@@ -287,7 +299,7 @@ div.cards {
 }
 
 img.grid-icon { 
-  background-color: inherit !important; 
+  background-color: transparent; 
   max-height:150px;
   vertical-align: middle;
 }
@@ -408,15 +420,6 @@ a:hover {
     border-bottom: 2px solid #e8ff00;
 }
 
-a.simple, a.simple:link {
- border-bottom: none;
- font-weight: 500;
-}
-
-a.simple:hover {
- font-weight: 800;
-}
-
 p.survey-sections {
   margin-top: 6px;
   margin-bottom: 3px;
@@ -479,10 +482,6 @@ p.tip:before {
     content: " ";
 }
 **/
-
-.lastrow {
-  margin-top: 50px;
-}
 
 .listp {
   margin-top: 7px;
@@ -629,6 +628,35 @@ Small Device Styles
     padding-left: 0px;
     padding-right: 0px;
   }
+  .flex-wrap {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    -ms-flex-direction: column;
+    flex-flow: column;
+  }
+  .content-1 {
+    -moz-box-ordinal-group: 1;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .content-2 {
+    -moz-box-ordinal-group: 2;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  #project_tagline {
+    letter-spacing: -.5px;
+  }
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -656,13 +684,20 @@ Small Device Styles
   }
 
   #project_title {
-     font-size: 20px;
-     padding-top: 6px !important;
+     padding-top: 25px !important;
+     padding-left: 10px;
+   }
+
+  #project_title h1 {
+    font-size: 20px;
    }
 
   #project_tagline {
      font-size: 14px;
-     padding: 0px 5px;
+     padding: 4px 5px;
+     padding-left: 10px;
+     line-height: 1.3em;
+     letter-spacing: 0px;
   }
 
   #maintitle {
