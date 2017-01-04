@@ -39,6 +39,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
 }
 
+p {
+  margin-top: 10px;
+}
+
+p.topp {
+  margin-top: 0px;
+}
+
 h1 {
   font-size: 34px;
   font-weight: 700;
@@ -47,6 +55,7 @@ h1 {
 
 h2 {
   margin-top: 25px;
+  margin-bottom: 2px;
   font-size: 2em;
   color: #086bb5;
 }
@@ -54,12 +63,15 @@ h2 {
 h3 {
   font-size: 22px;
   margin: 25px 0 10px 0;
+  margin-bottom: 5px;
+  margin-top: 12px;
   color: #6AC28E;
 }
 
 h4 {
   font-size: 19px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 h5 {
@@ -230,6 +242,15 @@ ul.survey-about li {
   color: #3f3f3f;
   font-size: 1.2em;
   font-weight: 500;
+}
+
+ul.departments {
+  list-style-type: none;
+}
+
+ul.departments li {
+  padding-bottom: 2px;
+  padding-left: 10px;
 }
 
 .pad-left-0 {
@@ -438,7 +459,7 @@ nav a:hover {
 a, a:visited, a:link { 
   border-bottom: 2px solid #fe739b;
   color: inherit;
-  font-weight:bold;
+  font-weight: 500;
   text-decoration: none;
 }
 
