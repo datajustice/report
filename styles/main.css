@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   color:#222222;
 }
 
+.nav-pills > li > a {
+  font-size: 1em;
+}
+
 .toph {
   margin-top: 20px;
 }
@@ -174,7 +178,7 @@ background-color: #fff;
   font-size: 18px;
 }
 
-#main_content_wrap {
+.main_content_wrap {
   background: #fff;
 }
 
@@ -235,9 +239,24 @@ ul.survey-about li {
 blockquote {
   border-left-color: #fe739b !important;
   margin-bottom: 2px !important;
+  font-size: 1.05em !important;
+  font-style: oblique;
 }
 .chart {
   width: 100% !important;
+}
+
+div#sharable-container {
+  width: 100% !important;
+}
+
+.percents {
+  color: #d33a95;
+  font-size: 1.1em;
+}
+
+h3.bottom-5 {
+  margin-bottom: 5px;
 }
 
 /**** GRID START ****/
@@ -577,13 +596,13 @@ div.surveys p {
   padding-right: 4% !important;
 }
 
-div.findings {
-  background-color: #f1f1f1;
-}
-
 .top {
   margin-top: 0px;
   padding-top: 0px;
+}
+
+div#findings-bg {
+  background-color: #f1f1f1;
 }
 
 /*******************************************************************************
@@ -623,7 +642,7 @@ Small Device Styles
 }
 
 @media screen and (max-width: 766px) {
-  #main_content_wrap { padding-left: 50px;}
+  .main_content_wrap { padding-left: 50px;}
   .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
   .right-side { width: 100%; margin: 0;}
   .grid { border-spacing: 0; }
@@ -667,19 +686,19 @@ Small Device Styles
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  #main_content_wrap { padding-left: 20px;}
- .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
- .right-side { width: 100%; margin: 0;}
- .grid {     border-spacing: 0; }
- .grid-row {  display: block; }
- .research-module, .grid-gallery { width: 100%; float: left; }
- #maintitle { font-size: 15px; }
+  .main_content_wrap { padding-left: 20px;}
+  .left-side { width: 100%; min-width: 100%; max-width: 100%; margin; 0;}
+  .right-side { width: 100%; margin: 0;}
+  .grid {     border-spacing: 0; }
+  .grid-row {  display: block; }
+  .research-module, .grid-gallery { width: 100%; float: left; }
+  #maintitle { font-size: 15px; }
 }
 
 
 @media screen and (max-width: 480px) {
 
-  #main_content_wrap { padding-left: 23px;}
+  .main_content_wrap { padding-left: 23px;}
 
   body {
     font-size:14px;
@@ -744,7 +763,12 @@ Small Device Styles
   nav ul li {
     padding-right: 0px;
   }
+  .nav > li > a {
+    padding: 8px 4px !important;
+    font-size: .85em !important;
+  }
 }
+
 
 .bottom-margin-0 {
   margin-bottom: 0px !important;
