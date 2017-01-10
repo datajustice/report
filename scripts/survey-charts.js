@@ -52,7 +52,7 @@ $(function() {
                 x: -20 //center
             },
             subtitle: {
-                text: '1 = This data should be shared widely without restrictions <br/>5 = This data should not be collected, let alone shared',
+                text: '1=This data should be shared widely without restrictions <br/>2=This data should be shared, but only if individual identities are protected<br/>3=This data should be shared, but only if individuals give their consent<br/>4=This data should not be shared under any circumstances<br/>5=This data should not be collected, let alone shared',
                 x: -20
             },
             xAxis: {
