@@ -29,7 +29,7 @@
       <div class="color2">&nbsp;</div>
       <div class="color3">&nbsp;</div>
     </div>
-    <div id="maintitle" class="main-nav"><a href="../../index.html">Data Justice</a></div>
+    <div id="maintitle" class="main-nav"><a href="../../index.html">Equitable Open Data</a></div>
     <ul>
       <!-- <li class=""><a href="../recommendations.html">Recommendations</a></li> -->
       <li class=""><a href="../research.html">Research</a></li>
@@ -41,7 +41,7 @@
 <div style="clear:both;"></div>
 
 <!-- START MAIN CONTENT -->
-<div class="container-fluid" id="main_content_wrap">
+<div class="container-fluid main_content_wrap">
 <section id="main_content">
 <!-- ++++ begin breadcrumb ++++ -->
   <div class="row breadcrumb-row">
@@ -61,16 +61,16 @@
       </div>
     </div> 
 <!-- +++ end intro paragraph section +++ -->
-
+</div> <!-- end top main content container -->
 
 <!-- ******************* TABBED NAVIGATION FOR FINDINGS *********************************/ -->
-
-<div class="row findings">
+<div class="container-fluid" id="findings-bg">
+<div class="row">
   <div class="col-sm-offset-1 col-lg-offset-2 col-sm-10 col-lg-8">
 
   <div><h2>Our Findings</h2></div>
   <div id="exTab1"> 
-    <ul  class="nav nav-pills">
+    <ul class="nav nav-pills">
       <li class="active">
         <a href="#1a" data-toggle="tab">Data Portal Awareness</a>
       </li>
@@ -86,70 +86,101 @@
 
       <div class="tab-content clearfix">
         <div class="tab-pane active" id="1a">
-          <p><strong>79.5%</strong> of respondents had <strong>heard of the City of Detroit's Open Data Portal</strong></p>
-          <p><strong>51.5%</strong> of those cite a <strong>“Data Discotech”, “DDJC” or “AMP”</strong> as their <strong>first source of information.</strong></p>
-           <p>To find out how to raise awareness, we asked: <br /><strong><em>“Which tactic do you think would be MOST effective at informing Detroiters about the portal and getting them to use it?”</strong></em> <br /><br />Most participants recommended one of the following: <blockquote>“free 101 trainings for the general public at libraries or community centers”</blockquote> <blockquote>“advanced trainings in how to use and analyze the data for community leaders”</blockquote></p>
+          <p><strong><span class="percents">79.5%</span></strong> of respondents had <strong>heard of the City of Detroit's Open Data Portal</strong></p>
+          <p><strong><span class="percents">51.5%</span></strong> of those cite a <strong>“Data Discotech”, “DDJC” or “AMP”</strong> as their <strong>first source of information.</strong></p>
+           <h3>Most recommended ways to inform Detroiters about the portal and encourage them to use it:</h3> <blockquote>“free 101 trainings for the general public at libraries or community centers”</blockquote> <blockquote>“advanced trainings in how to use and analyze the data for community leaders”</blockquote></p>
 
           <div class="chart" id="tactic-container"></div>
         </div>
         <div class="tab-pane" id="2a">
-          <p style="margin-bottom: 1px"><strong>50% had been asked by a government agency to provide personal data they did not feel comfortable sharing</strong></p>
+          <p style="margin-bottom: 1px"><strong><span class="percents">50%</span> of respondents had been asked by a government agency to provide personal data they did not feel comfortable sharing</strong></p>
           <p style="margin-top: 1px"> This information ranged from providing a social security number or bank account over email to questions about gender, marital status, income, criminal or arrest history, mental health and medical information.</p>
-          <p><strong>37% have experienced a government agency collecting or sharing their information without consent.</strong></p>
+          <p><strong><span class="percents">37%</span> of respondents have experienced a government agency collecting or sharing their information without consent.</strong></p>
         </div>
+
         <div class="tab-pane" id="3a">
-          <p>Section two of the survey asks participants to rate on a scale of 1-5 whether a dataset “should be shared widely without restrictions” (1) or “should not even be collected, much less shared” (5).</p>
-          <p><span style="color: #46a346; font-weight: bold;">Participants want the following datasets most widely shared:</span>
-          <ul id="sharing">
-            <li>“Locations of working and non-working streetlights”</li>
-            <li>“Locations of stores that accept EBT cards”</li>
-            <li>“Mayor's travel budget and schedule”</li>
-            <li>“Names of donors to political candidates and campaigns”</li>
-            <li>“Number and location of police brutality complaints”</li>
-            <li>“Unedited police car dashboard camera footage”</li>
-            <li>“Number of utility shut-offs at the block level”</li>
-          </ul></p>
-          <p><span style="color: #b20000; font-weight: bold;">Datasets that they said should NOT be collected or shared:</span>
-          <ul id="not-sharing">
-            <li>“Names of anonymous informants to Child Protective Services”</li>
-            <li>“Types of food purchased with SNAP benefits”</li>
-          </ul></p>
-          <p><span style="color: #ef9019; font-weight: bold;">Datasets about which respondents were undecided on what level the data should be shared and concerned about protecting privacy and anonymity:
-          <ul>
-            <li>“Utility shut-off status at address (house or building) level”</li>
-            <li>“Locations of houses entering foreclosure”</li>
-            <li>“Locations of clusters of highly communicable diseases, i.e. tuberculosis or HIV”</li>
-            <li>“Addresses where domestic violence complaints reported to DPD occurred”</li>
-          </ul></p>
-          <div class="chart" id="sharable-container"></div>
+          <div class="row">
+            <div class="col-lg-12">
+              <p>Participants rated, on a <strong>scale of <span class="percents">1-5</span></strong>, whether a dataset <strong>“should be shared widely without restrictions” <span class="percents">(1)</span></strong> or <strong>“should not even be collected, much less shared” <span class="percents">(5)</span></strong>.</p>
+              <div class="chart" id="sharable-container"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-6"> 
+              <h3>Datasets to be shared most widely:</h3>
+              <ul id="sharing">
+                <li>“Locations of working and non-working streetlights”</li>
+                <li>“Locations of stores that accept EBT cards”</li>
+                <li>“Mayor's travel budget and schedule”</li>
+                <li>“Names of donors to political candidates and campaigns”</li>
+                <li>“Number and location of police brutality complaints”</li>
+                <li>“Unedited police car dashboard camera footage”</li>
+                <li>“Number of utility shut-offs at the block level”</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-6"> 
+              <h3><span style="color: #b20000;">Datasets that should NOT be collected or shared:</span></h3>
+              <ul id="not-sharing">
+                <li>“Names of anonymous informants to Child Protective Services”</li>
+                <li>“Types of food purchased with SNAP benefits”</li>
+              </ul>
+            </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3><span style="color: #ef9019;">Undecided on what level these datasets should be shared.</span></h3> <p style="font-size: 1.1em; margin-top: 0px;">Respondents have concerns about <span style="color: #ef9019;">protecting privacy and anonymity:</span></p>
+            <ul>
+              <li>“Utility shut-off status at address (house or building) level”</li>
+              <li>“Locations of houses entering foreclosure”</li>
+              <li>“Locations of clusters of highly communicable diseases, i.e. tuberculosis or HIV”</li>
+              <li>“Addresses where domestic violence complaints reported to DPD occurred”</li>
+            </ul>
+
+            <p>For further discussion of <strong>potential benefits and harms of certain datasets</strong>, take a look at the results of our <a href="scenarios.html">Data Justice Scenarios focus groups</a>.
+          </div> <!-- end column -->
+        </div> <!-- end row -->
+        </div>  <!-- end tab pane 3a -->
+
           <div class="tab-pane" id="4a">
-          <p>In the third section of the survey, participants were presented with a list of all datasets currently available on the City of Detroit’s portal and asked which data had the potential to be most useful or most harmful to themselves, their family or community.</p>
-          <p>Through open-ended responses, many participants said that basically every dataset on the list could likely provide some value. To explain their choices, they offered anecdotes like:
-          <ul>
-            <li>“I'm seeking to move back in the City of Detroit, so housing parcels, neighborhood conditions, and safety are important to determine where to live”</li>
-            <li>“People who don't have a car need to know where they can catch a bus”</li>
-          </ul></p>
-          <p>Other respondents spoke to how different datasets are specifically meaningful to community organizers because they can “help organizers make better, informed decisions about how to confront local issues” and noted that data also have the power to “be helpful at the neighborhood level, diverting [perceptions of issues] from individual to systemic problems.”</p>
-          <p>On the flip side, most participants noted that the following data topics have potential to be harmful: foreclosure data; property purchaser and ownership information, moreso about individual than company ownership; and the locations of any victims of a crime, especially for domestic violence incidents.</p>
-          <p>Respondents expanded their answers and said they fear that these data could:
-          <ul>
-            <li>“Be manipulated to make certain areas appear more dangerous and preclude development there” and “give neighborhoods a bad reputation”</li>
-            <li>“Lead to insurance red-lining” and “discriminate against families and neighborhoods”</li>
-            <li>“Harm, embarrass, re-victimize or stigmatize victims of domestic violence”</li>
-            <li>“Lead to more policing”</li>
-            <li>“Put undocumented people in danger”</li>
-          </ul></p>
+          <p>In the third section of the survey, participants were presented with a list of all datasets currently available on the City of Detroit’s portal and were asked an open-ended question about <strong>which data had the potential to be most useful or most harmful to themselves, their family or community</strong>.</p>
+          <h3>Datasets that Help</h3>
+          <p>Many participants said that <strong>basically every dataset on the list could likely provide some value</strong>. Their explanations included:
+          <blockquote>“I'm seeking to move back in the City of Detroit, so housing parcels, neighborhood conditions, and safety are important to determine where to live”</blockquote>
+          <blockquote>“People who don't have a car need to know where they can catch a bus”</blockquote>
+          </p>
+          <p style="margin-top: 30px !important;">Other respondents spoke to how different datasets are <strong>specifically meaningful to community organizers</strong> because they can
+          <blockquote>“help organizers make better, informed decisions about how to confront local issues”</blockquote>
+          <blockquote>have the power to “be helpful at the neighborhood level, diverting [perceptions of issues] from individual to systemic problems.”</blockquote>
+          </p>
+          <h3><span style="color: #b20000;">Datasets that Harm</span></h3>
+          <p>Most participants noted that the following data topics <strong>have potential to be harmful:</strong> 
+            <ul>
+              <li>foreclosure data</li>
+              <li>property purchaser and ownership information, moreso about individual than company ownership</li>
+              <li>locations of any victims of a crime, especially for domestic violence incidents.</li>
+            </ul>
+          </p>
+          <p>Respondents <strong>explain that these data could</strong>:
+            <ul>
+              <li>“Be manipulated to make certain areas appear more dangerous and preclude development there” and “give neighborhoods a bad reputation”</li>
+              <li>“Lead to insurance red-lining” and “discriminate against families and neighborhoods”</li>
+              <li>“Harm, embarrass, re-victimize or stigmatize victims of domestic violence”</li>
+              <li>“Lead to more policing”</li>
+              <li>“Put undocumented people in danger”</li>
+            </ul>
+          </p>
         </div>
         <div class="tab-pane" id="5a">
-          <p>Lastly, participants were asked to list any datasets that they would like added to the portal. Popular responses included: 
+          <h3>Datasets many respondents want added to the portal</h3> 
           <ul>
-            <li>“Charter school data - who has the charter, their status, how many charters, how much funding”</li>
-            <li>“Data on utilities - running water problems after housing demolitions, who are the contractors turning off water?”</li>
-            <li>“All contracts past and present and bid open - include terms of contract with timing and area of effect. What performance measures and measures of satisfaction exist?”</li>
-            <li>“Frequency of buses, map transportation earliest and latest run times, grocery and hardware stores (by depth of product) include services such as ride home and day care”</li>
-            <li>“Government accountability - police activities, police brutality, political campaign info/spending” and “city council minutes”</li>
-            <li>“Information on pollution, air and water quality are important”</li>
+            <li>“<strong>Charter school data</strong> - who has the charter, their status, how many charters, how much funding”</li>
+            <li>“<strong>Data on utilities</strong> - running water problems after housing demolitions, who are the contractors turning off water?”</li>
+            <li>“<strong>All contracts</strong> past and present and bid open - include terms of contract with timing and area of effect. What performance measures and measures of satisfaction exist?”</li>
+            <li>“Frequency of <strong>buses</strong>, map <strong>transportation</strong> earliest and latest run times, <strong>grocery and hardware stores</strong> (by depth of product) include <strong>services</strong> such as ride home and day care”</li>
+            <li>“<strong>Government accountability</strong> - police activities, police brutality, political campaign info/spending” and “city council minutes”</li>
+            <li>“Information on <strong>pollution, air and water quality</strong> are important”</li>
           </ul></p>
         </div>
       </div>  <!-- end tab content clearfix -->
@@ -159,14 +190,16 @@
 <hr></hr>
 
         
-        </div> <!-- end column -->
-      </div>  <!-- end row -->
+</div> <!-- end column -->
+</div>  <!-- end row -->
+</div> <!-- end container -->
 
 <!-- ******************* END TABBED NAV FOR FINDINGS ************************************* -->           
 
 
 
 <!-- remaining content main row/column sizing -->
+<div class="container-fluid main_content_wrap">
   <div class="row">
     <div class="col-sm-offset-1 col-lg-offset-2 col-sm-10 col-lg-8">
 
@@ -215,7 +248,7 @@
         </div>
         <div class="row">  
           <div class="col-md-7 surveys"> <!-- begin location map column -->
-            <img src="../../images/district-map.png" alt="district map of Detroit, with Districts 3, 4, 6, and 7 shaded in" class="full-width" style="padding-top: 0px;">
+            <img src="../../images/district-map.png" alt="district map of Detroit, with Districts 3, 4, 6, and 7 shaded in" class="full-width map" style="padding-top: 0px;">
           </div> <!-- end location map column -->
 
           <div class="col-md-5">   <!-- begin location text column -->
@@ -234,15 +267,15 @@
       <div class="row">
         <div class="col-sm-offset-1 col-lg-offset-2 col-sm-10 col-lg-8">
 
-
           <h2>Next steps</h2>
-          <p>As the DDJC and DCTP continue to host Data Discotechs, we plan to continue to make this data justice survey available to participants. We look forward to both growing our survey sample and measuring if and how responses change as the City of Detroit works to publish more data and engage users.</p>
+          <p class="bottom">As the DDJC and DCTP continue to host Data Discotechs, we plan to continue to make this data justice survey available to participants. We look forward to both growing our survey sample and measuring if and how responses change as the City of Detroit works to publish more data and engage users.</p>
         </div> <!--  end column -->
       </div>   <!--  end row -->
 <!-- +++ end Next Steps section +++ -->
 
 </section>
 </div>
+</div> <!-- end second main content container -->
 
 <!-- end main content div -->
 
