@@ -16,7 +16,7 @@ body {
   font-size: .9em;
   margin: 0px;
   box-sizing: border-box;
-  background: #212121;
+  background: #fff;
   color: #333;
   font-family: "AsapRegular",Fallback,sans-serif;
 }
@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-pills > li > a {
   font-size: 1em;
+}
+
+p.breadcrumb {
+  margin-bottom: 0px;
 }
 
 .toph {
@@ -64,7 +68,7 @@ h3 {
   font-size: 22px;
   margin: 25px 0 10px 0;
   margin-bottom: 5px;
-  margin-top: 12px;
+  margin-top: 15px;
   color: #6AC28E;
 }
 
@@ -190,7 +194,7 @@ background-color: #fff;
   font-size: 18px;
 }
 
-.main_content_wrap {
+div.main_content_wrap {
   background: #fff;
 }
 
@@ -280,8 +284,27 @@ h3.bottom-5 {
   margin-bottom: 5px;
 }
 
-/**** GRID START ****/
+.bottom-margin-0 {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px;
+}
 
+div.h1-graphic {
+  width: 100%;
+  height: 20px;
+  background: #6AC28E;
+  margin-top: -13px;
+  margin-right: 5px;
+  background-image: url("../images/h1-bar.png");
+  background-repeat: horizontal;
+}
+
+.front img {
+  margin-top: 20px;
+}
+
+
+/************* GRID START *****************/
 
 .flip-container {
   perspective: 1000px;
@@ -293,7 +316,6 @@ h3.bottom-5 {
 
 .flip-container, .front, .back {
     width: 100%;
-    max-width: 600px;
     min-height: 27em;
 }
 
@@ -304,7 +326,7 @@ h3.bottom-5 {
   margin-bottom: 20px;
 }
 
-.front, .back {
+.front {
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -351,12 +373,37 @@ img.grid-icon {
   vertical-align: middle;
 }
 
-div#methods-grid .front, .back {
+div#methods-grid .front {
   border-color: #d33a95 !important;
+}
+
+div.rec-card {
+  border: 4px solid #086bb5;
+  border-radius: 6px;
+  background-color: rgba(106, 194, 142, .15);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+div.rec-card p {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.left-card {
+  margin-right: 15px;
+}
+
+.dt-cards .rec-card {
+  height: 15em;
 }
 
 /**** GRID END ****/
 
+.data-policy ul {
+  margin-top: 10px;
+}
 
 nav {
   width:100%;
@@ -364,7 +411,7 @@ nav {
   z-index: 101;
   top:0;
   left:0;
-  background: #2e2e2e url(icons/pattern.png) repeat;
+  background: #333333 url(icons/pattern.png) repeat;
   line-height: 20px;
   text-transform: uppercase;
   vertical-align: middle;
@@ -675,6 +722,7 @@ Small Device Styles
     padding-left: 0px;
     padding-right: 0px;
   }
+
   .flex-wrap {
     display: -moz-box;
     display: -webkit-box;
@@ -687,6 +735,7 @@ Small Device Styles
     -ms-flex-direction: column;
     flex-flow: column;
   }
+
   .content-1 {
     -moz-box-ordinal-group: 1;
     -webkit-box-ordinal-group: 1;
@@ -694,6 +743,7 @@ Small Device Styles
     -ms-flex-order: 1;
     order: 1;
   }
+
   .content-2 {
     -moz-box-ordinal-group: 2;
     -webkit-box-ordinal-group: 2;
@@ -701,8 +751,13 @@ Small Device Styles
     -ms-flex-order: 2;
     order: 2;
   }
+
   #project_tagline {
     letter-spacing: -.5px;
+  }
+
+  .dt-cards .rec-card {
+    height: 18em;
   }
 }
 
@@ -790,22 +845,3 @@ Small Device Styles
   }
 }
 
-
-.bottom-margin-0 {
-  margin-bottom: 0px !important;
-  padding-bottom: 0px;
-}
-
-div.h1-graphic {
-  width: 100%;
-  height: 20px;
-  background: #6AC28E;
-  margin-top: -13px;
-  margin-right: 5px;
-  background-image: url("../images/h1-bar.png");
-  background-repeat: horizontal;
-}
-
-.front img {
-  margin-top: 20px;
-}
