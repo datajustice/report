@@ -399,14 +399,20 @@ div.rec-card {
   border: 4px solid #086bb5;
   border-radius: 6px;
   background-color: rgba(106, 194, 142, .15);
-  text-align: center;
   padding: 15px;
   margin-top: 20px;
 }
 
-div.rec-card p {
-  text-align: left;
+.rec-card p {
+  text-align: left !important;
   padding-left: 5px;
+  display: inline;
+}
+
+.rec-card h4 {
+  text-align: left;
+  margin-top: 5px;
+  display: inline;
 }
 
 .left-card {
@@ -415,6 +421,10 @@ div.rec-card p {
 
 .dt-cards .rec-card {
   min-height: 15em;
+}
+
+.center-align {
+  text-align: center;
 }
 
 /**** GRID END ****/
@@ -786,6 +796,8 @@ Small Device Styles
 
   .download p {
     padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0;
   }
 }
 
