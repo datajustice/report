@@ -279,7 +279,15 @@ blockquote {
 div#sharable-container {
   min-width: 400px;
   height: 520px;
-  max-width: 820px;
+  max-width: 1000px;
+}
+
+.highcharts-plot-background {
+  width: 100% !important;
+}
+
+.highcharts-background {
+  width: 100% !important;
 }
 
 .percents {
@@ -672,6 +680,18 @@ p.rschcell {
 
 /**** GRID END ****/
 
+img.border {
+  border: 2px solid #ccc;
+}
+
+.disco-graphic {
+  float: left;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
 .textblocks li {
   margin-bottom: 30px;
 }
@@ -699,6 +719,20 @@ div.surveys p {
 
 div#findings-bg {
   background-color: #f1f1f1;
+}
+
+.caption {
+  font-size: .9em;
+  color: #aaa;
+}
+
+.scenario h4 {
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+article.accordion {
+  margin-bottom: 25px !important;
 }
 
 /*******************************************************************************
@@ -799,7 +833,13 @@ Small Device Styles
     padding-top: 10px;
     margin-top: 0;
   }
+
+/*
+  .hide-small {
+  display: none;
+  }
 }
+*/
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .main_content_wrap { padding-left: 20px;}
